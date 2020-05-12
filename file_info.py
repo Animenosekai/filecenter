@@ -356,62 +356,34 @@ def info(file):
     file_info = {}
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
-        #FILENAME, EXTENSTION AND LOCATION
-        try:
-            file_base = os.path.basename(correct_path)
-            file_path = os.path.abspath(correct_path)
-            filename, file_extension = os.path.splitext(file_base)
-            file_info['file_base'] = file_base
-            file_info['file_path'] = file_path
-            file_info['filename'] = filename
-            file_info['file_extension'] = file_extension
-        except:
-            print("An error occured while getting this file's name")
-            file_info['file_base'] = 'Error'
-            file_info['file_path'] = 'Error'
-            file_info['filename'] = 'Error'
-            file_info['file_extension'] = 'Error'
-        #SIZE
-        try:
-            size_in_bytes = os.path.getsize(correct_path)
-            file_info['size_in_bytes'] = size_in_bytes
-            file_info['size'] = get_size(size_in_bytes)
-        except:
-            print("An error occured while getting this file's size")
-            file_info['size_in_bytes'] = 'Error'
-            file_info['size'] = 'Error'
-        #TIMESTAMPS
-        try:
-            file_stat = os.stat(correct_path)
-            last_access = file_stat.st_atime
-            last_access_nanoseconds = file_stat.st_atime_ns
-            last_modif = file_stat.st_mtime
-            last_modif_nanoseconds = file_stat.st_mtime_ns
-            last_metadata_change = file_stat.st_ctime
-            last_metadata_change_nanoseconds = file_stat.st_ctime_ns
-            
-            file_info['file_stat'] = file_stat
-            file_info['last_access'] = last_access
-            file_info['last_access_nanoseconds'] = last_access_nanoseconds
-            file_info['last_modification'] = last_modif
-            file_info['last_modification_nanoseconds'] = last_modif_nanoseconds
-            file_info['last_metadata_change'] = last_metadata_change
-            file_info['last_metadata_change_nanoseconds'] = last_metadata_change_nanoseconds
-        except:
-            print("An error occured while getting timestamps for this file")
-            file_info['file_stat'] = 'Error'
-            file_info['last_access'] = 'Error'
-            file_info['last_access_nanoseconds'] = 'Error'
-            file_info['last_modification'] = 'Error'
-            file_info['last_modification_nanoseconds'] = 'Error'
-            file_info['last_metadata_change'] = 'Error'
-            file_info['last_metadata_change_nanoseconds'] = 'Error'
+        file_info['exists'] = exists(file)
+        file_info['isdir'] = isdir(file)
+        file_info['isfile'] = isfile(file)
+        file_info['mimetype'] = mimetype(file)
+        file_info['base'] = base(file)
+        file_info['given_path'] = file
+        file_info['usable_path'] = correct_path
+        file_info['name'] = name(file)
+        file_info['extension'] = extension(file)
+        file_info['size'] = size(file)
+        file_info['size_in_bytes'] = size_in_bytes(file)
+        file_info['full_file_stat'] = file_stat(file)
+        file_info['last_access'] = last_access(file)
+        file_info['last_access_nanoseconds'] = last_access_nanoseconds(file)
+        file_info['last_modification'] = last_modification(file)
+        file_info['last_modification_nanoseconds'] = last_modification_nanoseconds(file)
+        file_info['last_metadata_change'] = last_metadata_change(file)
+        file_info['last_metadata_change_nanoseconds'] = last_metadata_change_nanoseconds(file)
+        file_info['type'] = type(file)
+        file_info['human_readable_extension'] = extension_to_human_readable(file_info['extension'])
+        file_info['extension_info'] = extension_info(file_info['extension'])
+        file_info['extension_description'] = extension_description(file_info['extension'])
+        file_info['extension_usage'] = extension_usage(file_info['extension'])
     else:
        file_info['information'] = 'An error occured while searching for your file.' 
     return file_info
 
 
-'''
 
 # Testing
 
@@ -423,5 +395,3 @@ print('{')
 for info in results:
     print(info + ': ' + str(results[info]))
 print('     }')
-
-'''
