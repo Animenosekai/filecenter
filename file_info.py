@@ -50,6 +50,15 @@ def isfile(file):
     correct_path = get_correct_path(file)
     return(os.path.isfile(correct_path))
 
+def type(file):
+    type = ''
+    correct_path = get_correct_path(file)
+    if os.path.isfile(correct_path):
+        type = 'File'
+    if os.path.isdir(correct_path):
+        type = 'Folder/Directory'
+    return type
+
 def base(file):
     file_base = ''
     correct_path = get_correct_path(file)
@@ -326,7 +335,7 @@ def info(file):
     return file_info
 
 
-
+'''
 
 # Testing
 
@@ -338,3 +347,5 @@ print('{')
 for info in results:
     print(info + ': ' + str(results[info]))
 print('     }')
+
+'''
