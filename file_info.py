@@ -7,6 +7,10 @@
 
 # Imports
 import os
+import mimetypes
+import file_extension_to_human_readable
+import file_extension_desc
+import type_data
 
 ########## TOOLS ##########
 def get_size(bytes, suffix="B"):
@@ -50,14 +54,15 @@ def isfile(file):
     correct_path = get_correct_path(file)
     return(os.path.isfile(correct_path))
 
-def type(file):
-    type = ''
+def mimetype(file):
+    mimetype = ''
     correct_path = get_correct_path(file)
-    if os.path.isfile(correct_path):
-        type = 'File'
-    if os.path.isdir(correct_path):
-        type = 'Folder/Directory'
-    return type
+    if os.path.exists(correct_path):
+        mimetype_tuple = mimetypes.guess_type(correct_path)
+        mimetype = mimetype_tuple[0]
+    else:
+        mimetype = 'An error occured while getting the file'
+    return(mimetype)
 
 def base(file):
     file_base = ''
@@ -187,6 +192,77 @@ def last_metadata_change_nanoseconds(file):
     
     return(last_metadata_change_nanoseconds)
 
+def type(file):
+    type = ''
+    correct_path = get_correct_path(file)
+    file_extension = extension(file)
+    if os.path.isdir(correct_path):
+        type = 'Folder/Directory'
+    elif file_extension in type_data.archive():
+        type = 'Archive'
+    elif file_extension in type_data.audio():
+        type = 'Audio'
+    elif file_extension in type_data.backup():
+        type = 'Backup'
+    elif file_extension in type_data.book():
+        type = 'eBook'
+    elif file_extension in type_data.database():
+        type = 'Database File'
+    elif file_extension in type_data.developer():
+        type = 'Developer'
+    elif file_extension in type_data.disk_image():
+        type = 'Disk Image'
+    elif file_extension in type_data.encoded():
+        type = 'Encoded File'
+    elif file_extension in type_data.executable():
+        type = 'Application/Executable'
+    elif file_extension in type_data.developer():
+        type = 'Developer'
+    elif file_extension in type_data.font():
+        type = 'Font'
+    elif file_extension in type_data.image_3d():
+        type = '3D Image'
+    elif file_extension in type_data.plugin():
+        type = 'Plugin'
+    elif file_extension in type_data.preset():
+        type = 'Preset/Settings'
+    elif file_extension in type_data.raster_image():
+        type = 'Image'
+    elif file_extension in type_data.raw_image():
+        type = 'Raw Image'
+    elif file_extension in type_data.rom():
+        type = 'ROM/Game File'
+    elif file_extension in type_data.spreadsheet():
+        type = 'Spreadsheet'
+    elif file_extension in type_data.system():
+        type = 'System File'
+    elif file_extension in type_data.text():
+        type = 'Text File'
+    elif file_extension in type_data.vector_image():
+        type = 'Vector Image'
+    elif file_extension in type_data.video():
+        type = 'Video'
+    elif file_extension in type_data.web():
+        type = 'Web Document'
+    else:
+        type = 'unknown'
+    return type
+
+def extension_to_human_readable(file_ext):
+    result = file_extension_to_human_readable.file_extension_to_human_readable(file_ext)
+    return result
+
+def extension_info(file_ext):
+    result = file_extension_desc.extension_info(file_ext)
+    return result
+
+def extension_description(file_ext):
+    result = file_extension_desc.extension_description(file_ext)
+    return result
+
+def extension_usage(file_ext):
+    result = file_extension_desc.extension_usage(file_ext)
+    return result
 
 
 ########## GROUPS ##########

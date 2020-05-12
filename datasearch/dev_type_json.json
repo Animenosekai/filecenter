@@ -1,0 +1,2502 @@
+[
+ {
+   "FIELD1": ".PLAYGROUND",
+   "FIELD2": "Xcode Playground File",
+   "FIELD3": 125
+ },
+ {
+   "FIELD1": ".APPXBUNDLE",
+   "FIELD2": "Windows App Bundle",
+   "FIELD3": 133
+ },
+ {
+   "FIELD1": ".AS2PROJ",
+   "FIELD2": "FlashDevelop ActionScript 2 Project File",
+   "FIELD3": 140
+ },
+ {
+   "FIELD1": ".RBXL",
+   "FIELD2": "Roblox Location File",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".VBX",
+   "FIELD2": "Visual Basic Custom Control",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".RBC",
+   "FIELD2": "Rembo-C Script",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".MFA",
+   "FIELD2": "Multimedia Fusion Development File",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".PBJ",
+   "FIELD2": "Pixel Bender Bytecode File",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".XQ",
+   "FIELD2": "XQuery File",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".BET",
+   "FIELD2": "BETA Source File",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".FSPROJ",
+   "FIELD2": "Visual F# Project File",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".MSHC",
+   "FIELD2": "Microsoft Help Container File",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".IDB",
+   "FIELD2": "Visual Studio Intermediate Debug File",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".S19",
+   "FIELD2": "Motorola S19 File Record",
+   "FIELD3": 150
+ },
+ {
+   "FIELD1": ".PROTO",
+   "FIELD2": "Protocol Buffer File",
+   "FIELD3": 152
+ },
+ {
+   "FIELD1": ".PWN",
+   "FIELD2": "Pawn Source Code File",
+   "FIELD3": 152
+ },
+ {
+   "FIELD1": ".BLUEJ",
+   "FIELD2": "BlueJ Package File",
+   "FIELD3": 156
+ },
+ {
+   "FIELD1": ".COD",
+   "FIELD2": "Compiled Source Code",
+   "FIELD3": 157
+ },
+ {
+   "FIELD1": ".YPR",
+   "FIELD2": "BYOB Project File",
+   "FIELD3": 157
+ },
+ {
+   "FIELD1": ".CS",
+   "FIELD2": "C# Source Code File",
+   "FIELD3": 161
+ },
+ {
+   "FIELD1": ".CAPX",
+   "FIELD2": "Construct Compressed Project File",
+   "FIELD3": 162
+ },
+ {
+   "FIELD1": ".LGO",
+   "FIELD2": "Logo Instructions File",
+   "FIELD3": 164
+ },
+ {
+   "FIELD1": ".VBPROJ",
+   "FIELD2": "Visual Studio Visual Basic Project",
+   "FIELD3": 164
+ },
+ {
+   "FIELD1": ".AM7",
+   "FIELD2": "AutoPlay Media Studio 7 Project",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".UI",
+   "FIELD2": "User Interface File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".VBP",
+   "FIELD2": "Visual Basic Project File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".FBP",
+   "FIELD2": "wxFormBuilder Project",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".CCS",
+   "FIELD2": "CodeCharge Studio Project File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".ERL",
+   "FIELD2": "Erlang Source Code File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".CLW",
+   "FIELD2": "Visual C++ ClassWizard File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".NUSPEC",
+   "FIELD2": "NuGet Specification File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".MSHI",
+   "FIELD2": "Microsoft Help Index File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".MSS",
+   "FIELD2": "Microprocessor Software Specification File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".XCDATAMODELD",
+   "FIELD2": "Xcode Core Data Model File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".LDS",
+   "FIELD2": "Binutils LD Linker Script",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".BBC",
+   "FIELD2": "BBC BASIC Data File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".WDW",
+   "FIELD2": "WinDev Window File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".ICONSET",
+   "FIELD2": "Mac OS X Icon Set Folder",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".DGML",
+   "FIELD2": "Visual Studio Directed Graph Document",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".HAML",
+   "FIELD2": "Haml Source Code File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".XAMLX",
+   "FIELD2": "Visual Studio Workflow Service File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".PBXBTREE",
+   "FIELD2": "Xcode Auto-Complete File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".LBS",
+   "FIELD2": "Omnis Library",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".CLASS",
+   "FIELD2": "Java Class File",
+   "FIELD3": 167
+ },
+ {
+   "FIELD1": ".HPP",
+   "FIELD2": "C++ Header File",
+   "FIELD3": 168
+ },
+ {
+   "FIELD1": ".SB",
+   "FIELD2": "Scratch Project File",
+   "FIELD3": 168
+ },
+ {
+   "FIELD1": ".CD",
+   "FIELD2": "Visual Studio Class Diagram",
+   "FIELD3": 168
+ },
+ {
+   "FIELD1": ".MF",
+   "FIELD2": "Java Manifest File",
+   "FIELD3": 169
+ },
+ {
+   "FIELD1": ".XAP",
+   "FIELD2": "XACT Project",
+   "FIELD3": 169
+ },
+ {
+   "FIELD1": ".SLN",
+   "FIELD2": "Visual Studio Solution File",
+   "FIELD3": 170
+ },
+ {
+   "FIELD1": ".QPR",
+   "FIELD2": "FoxPro Generated Query Program",
+   "FIELD3": 171
+ },
+ {
+   "FIELD1": ".ISE",
+   "FIELD2": "InstallShield Express Project File",
+   "FIELD3": 171
+ },
+ {
+   "FIELD1": ".SB2",
+   "FIELD2": "Scratch 2.0 Project File",
+   "FIELD3": 172
+ },
+ {
+   "FIELD1": ".TRX",
+   "FIELD2": "Visual Studio Test Results File",
+   "FIELD3": 173
+ },
+ {
+   "FIELD1": ".ML",
+   "FIELD2": "ML Source Code File",
+   "FIELD3": 174
+ },
+ {
+   "FIELD1": ".MXML",
+   "FIELD2": "Flex MXML Component",
+   "FIELD3": 175
+ },
+ {
+   "FIELD1": ".KDEVPRJ",
+   "FIELD2": "KDevelop Project File",
+   "FIELD3": 175
+ },
+ {
+   "FIELD1": ".W32",
+   "FIELD2": "Win32 Makefile",
+   "FIELD3": 175
+ },
+ {
+   "FIELD1": ".B",
+   "FIELD2": "BASIC Source File",
+   "FIELD3": 176
+ },
+ {
+   "FIELD1": ".GMX",
+   "FIELD2": "GameMaker File",
+   "FIELD3": 177
+ },
+ {
+   "FIELD1": ".ARSC",
+   "FIELD2": "Android Package Resource File",
+   "FIELD3": 177
+ },
+ {
+   "FIELD1": ".CSPROJ",
+   "FIELD2": "Visual Studio C# Project",
+   "FIELD3": 177
+ },
+ {
+   "FIELD1": ".LUA",
+   "FIELD2": "Lua Source File",
+   "FIELD3": 178
+ },
+ {
+   "FIELD1": ".GMK",
+   "FIELD2": "GameMaker Project File",
+   "FIELD3": 180
+ },
+ {
+   "FIELD1": ".DCP",
+   "FIELD2": "Delphi Compiled Package",
+   "FIELD3": 180
+ },
+ {
+   "FIELD1": ".GSPROJ",
+   "FIELD2": "GameSalad Windows Project File",
+   "FIELD3": 180
+ },
+ {
+   "FIELD1": ".APPX",
+   "FIELD2": "Windows 8 App Package",
+   "FIELD3": 180
+ },
+ {
+   "FIELD1": ".CPP",
+   "FIELD2": "C++ Source Code File",
+   "FIELD3": 180
+ },
+ {
+   "FIELD1": ".SUO",
+   "FIELD2": "Visual Studio Solution User Options File",
+   "FIELD3": 182
+ },
+ {
+   "FIELD1": ".NUPKG",
+   "FIELD2": "NuGet Package",
+   "FIELD3": 183
+ },
+ {
+   "FIELD1": ".YML",
+   "FIELD2": "YAML Document",
+   "FIELD3": 183
+ },
+ {
+   "FIELD1": ".PAS",
+   "FIELD2": "Delphi Unit Source File",
+   "FIELD3": 183
+ },
+ {
+   "FIELD1": ".MPX",
+   "FIELD2": "FoxPro Compiled Program Menu",
+   "FIELD3": 183
+ },
+ {
+   "FIELD1": ".AS3PROJ",
+   "FIELD2": "FlashDevelop ActionScript 3 Project File",
+   "FIELD3": 183
+ },
+ {
+   "FIELD1": ".MARKDOWN",
+   "FIELD2": "Markdown Documentation File",
+   "FIELD3": 183
+ },
+ {
+   "FIELD1": ".PY",
+   "FIELD2": "Python Script",
+   "FIELD3": 184
+ },
+ {
+   "FIELD1": ".RBXM",
+   "FIELD2": "Roblox Model",
+   "FIELD3": 184
+ },
+ {
+   "FIELD1": ".O",
+   "FIELD2": "Compiled Object File",
+   "FIELD3": 185
+ },
+ {
+   "FIELD1": ".FPM",
+   "FIELD2": "FPS Creator Map File",
+   "FIELD3": 186
+ },
+ {
+   "FIELD1": ".STORYBOARD",
+   "FIELD2": "Interface Builder Storyboard Document",
+   "FIELD3": 186
+ },
+ {
+   "FIELD1": ".MD",
+   "FIELD2": "Markdown Documentation File",
+   "FIELD3": 186
+ },
+ {
+   "FIELD1": ".PATCH",
+   "FIELD2": "Patch File",
+   "FIELD3": 187
+ },
+ {
+   "FIELD1": ".AP_",
+   "FIELD2": "ADT Android Developer Package",
+   "FIELD3": 187
+ },
+ {
+   "FIELD1": ".JAVA",
+   "FIELD2": "Java Source Code File",
+   "FIELD3": 190
+ },
+ {
+   "FIELD1": ".FTL",
+   "FIELD2": "FreeMarker Template File",
+   "FIELD3": 191
+ },
+ {
+   "FIELD1": ".Y",
+   "FIELD2": "Yacc Source File",
+   "FIELD3": 191
+ },
+ {
+   "FIELD1": ".RES",
+   "FIELD2": "Windows Resource File",
+   "FIELD3": 192
+ },
+ {
+   "FIELD1": ".DEX",
+   "FIELD2": "Dalvik Executable File",
+   "FIELD3": 192
+ },
+ {
+   "FIELD1": ".SWIFT",
+   "FIELD2": "Swift Source Code File",
+   "FIELD3": 194
+ },
+ {
+   "FIELD1": ".SWC",
+   "FIELD2": "Flex Components Archive",
+   "FIELD3": 194
+ },
+ {
+   "FIELD1": ".VDPROJ",
+   "FIELD2": "Visual Studio Setup and Deployment Project",
+   "FIELD3": 195
+ },
+ {
+   "FIELD1": ".NIB",
+   "FIELD2": "Interface Builder User Interface File",
+   "FIELD3": 196
+ },
+ {
+   "FIELD1": ".PB",
+   "FIELD2": "PureBasic Source File",
+   "FIELD3": 196
+ },
+ {
+   "FIELD1": ".TARGETS",
+   "FIELD2": "MSBuild Targets File",
+   "FIELD3": 196
+ },
+ {
+   "FIELD1": ".CONFIG",
+   "FIELD2": "Configuration File",
+   "FIELD3": 196
+ },
+ {
+   "FIELD1": ".S",
+   "FIELD2": "Source Code File",
+   "FIELD3": 197
+ },
+ {
+   "FIELD1": ".PO",
+   "FIELD2": "Portable Object",
+   "FIELD3": 198
+ },
+ {
+   "FIELD1": ".MO",
+   "FIELD2": "Machine Object File",
+   "FIELD3": 198
+ },
+ {
+   "FIELD1": ".INO",
+   "FIELD2": "Arduino Sketch File",
+   "FIELD3": 198
+ },
+ {
+   "FIELD1": ".ABC",
+   "FIELD2": "ActionScript Byte Code File",
+   "FIELD3": 198
+ },
+ {
+   "FIELD1": ".OCX",
+   "FIELD2": "ActiveX Control",
+   "FIELD3": 198
+ },
+ {
+   "FIELD1": ".SH",
+   "FIELD2": "Bash Shell Script",
+   "FIELD3": 199
+ },
+ {
+   "FIELD1": ".FLA",
+   "FIELD2": "Adobe Animate Animation",
+   "FIELD3": 199
+ },
+ {
+   "FIELD1": ".KDEVELOP",
+   "FIELD2": "KDevelop Project Data File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".APA",
+   "FIELD2": "RSView Development Project Archive",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".SWD",
+   "FIELD2": "Flash Debug File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".YMP",
+   "FIELD2": "YaST Metapackage File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".BDSPROJ",
+   "FIELD2": "Borland Developer Studio Project",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".OCA",
+   "FIELD2": "Custom Control Library Type File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".DPKW",
+   "FIELD2": "Delphi Package",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".IWS",
+   "FIELD2": "IntelliJ IDEA Web Page",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".AM6",
+   "FIELD2": "AutoPlay Media Studio 6 Project",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".CCN",
+   "FIELD2": "Compressed Multimedia Fusion File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".GORM",
+   "FIELD2": "Gorm Interface Resource File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".MYAPP",
+   "FIELD2": "Visual Studio Application XML File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".F90",
+   "FIELD2": "Fortran 90 Source Code File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".FOR",
+   "FIELD2": "Fortran 77 Source File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".TK",
+   "FIELD2": "Tk Script",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".PIKA",
+   "FIELD2": "Pika Software Builder Project File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".LBI",
+   "FIELD2": "Dreamweaver Library Item",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".NED",
+   "FIELD2": "OMNeT++ Network Description File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".VSZ",
+   "FIELD2": "Visual Studio Wizard File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".FXPL",
+   "FIELD2": "Adobe Flash FXP Library",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".ASVF",
+   "FIELD2": "Asphyre Sphinx Archive File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".VTM",
+   "FIELD2": "Visual Tool Markup Language Document",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".SDEF",
+   "FIELD2": "AppleScript Dictionary Document",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".WIXMST",
+   "FIELD2": "WiX Transform File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".RODL",
+   "FIELD2": "RemObjects Definition Language File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".RESX",
+   "FIELD2": ".NET Managed Resources File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".GROUPPROJ",
+   "FIELD2": "Delphi Project Group File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".LXSPROJ",
+   "FIELD2": "Liquid XML Studio Project File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".RBW",
+   "FIELD2": "Ruby Script",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".ILK",
+   "FIELD2": "Incremental Linking File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".TEXTFACTORY",
+   "FIELD2": "BBEdit Text Factory",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".GS",
+   "FIELD2": "Google Apps Script",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".TLD",
+   "FIELD2": "Tag Library Descriptor File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".VCPROJ",
+   "FIELD2": "Visual C++ Project File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".DPROJ",
+   "FIELD2": "Delphi Project",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".RES",
+   "FIELD2": "C++ Complied Resource Script",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".PBG",
+   "FIELD2": "Pixel Bender Graph File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".MSIX",
+   "FIELD2": "MSIX Installer Package",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".GFAR",
+   "FIELD2": "Greenfoot Archive",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".FSX",
+   "FIELD2": "Visual F# Script File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".DCPROJ",
+   "FIELD2": "Dashcode Project",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".XCAPPDATA",
+   "FIELD2": "Xcode App Data File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".ANE",
+   "FIELD2": "Adobe AIR Native Extension",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".WIQ",
+   "FIELD2": "Visual Studio Work Item Query File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".GITATTRIBUTES",
+   "FIELD2": "Git Attributes File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".GLD",
+   "FIELD2": "MPLAB C Compiler Linker Script File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".NLS",
+   "FIELD2": "NetLogo Source File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".VDP",
+   "FIELD2": "Visual Studio Deployment Project",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".ENTITLEMENTS",
+   "FIELD2": "Mac App Sandboxing Entitlements File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".WSC",
+   "FIELD2": "Windows Script Component",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".SQLPROJ",
+   "FIELD2": "Visual Studio SQL Server Project",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".VSMACROS",
+   "FIELD2": "Visual Studio Binary Macro Project",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".TESTRUNCONFIG",
+   "FIELD2": "Visual Studio Test Run Configuration File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".EDMX",
+   "FIELD2": "ADO.NET Entity Data Model Designer File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".NCB",
+   "FIELD2": "Visual C++ IntelliSense Database",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".DGSL",
+   "FIELD2": "Visual Shader Graph File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".REFRESH",
+   "FIELD2": "Visual Studio Refresh File",
+   "FIELD3": 200
+ },
+ {
+   "FIELD1": ".RESOURCES",
+   "FIELD2": "Visual Studio Resource File",
+   "FIELD3": 205
+ },
+ {
+   "FIELD1": ".VB",
+   "FIELD2": "Visual Basic Project Item File",
+   "FIELD3": 205
+ },
+ {
+   "FIELD1": ".4DB",
+   "FIELD2": "4th Dimension Database Structure File",
+   "FIELD3": 205
+ },
+ {
+   "FIELD1": ".BPL",
+   "FIELD2": "Borland Package Library",
+   "FIELD3": 207
+ },
+ {
+   "FIELD1": ".XSD",
+   "FIELD2": "XML Schema Definition",
+   "FIELD3": 207
+ },
+ {
+   "FIELD1": ".NK",
+   "FIELD2": "NUKE Script",
+   "FIELD3": 208
+ },
+ {
+   "FIELD1": ".HS",
+   "FIELD2": "Haskell Script",
+   "FIELD3": 208
+ },
+ {
+   "FIELD1": ".ASM",
+   "FIELD2": "Assembly Language Source Code File",
+   "FIELD3": 209
+ },
+ {
+   "FIELD1": ".DEF",
+   "FIELD2": "Module-Definition File",
+   "FIELD3": 209
+ },
+ {
+   "FIELD1": ".C",
+   "FIELD2": "C/C++ Source Code File",
+   "FIELD3": 209
+ },
+ {
+   "FIELD1": ".RPY",
+   "FIELD2": "Python Script",
+   "FIELD3": 210
+ },
+ {
+   "FIELD1": ".DOX",
+   "FIELD2": "Visual Basic Binary UserDocument",
+   "FIELD3": 210
+ },
+ {
+   "FIELD1": ".FS",
+   "FIELD2": "Visual F# Source File",
+   "FIELD3": 210
+ },
+ {
+   "FIELD1": ".VCXPROJ",
+   "FIELD2": "Visual C++ Project",
+   "FIELD3": 211
+ },
+ {
+   "FIELD1": ".DPR",
+   "FIELD2": "Delphi Project",
+   "FIELD3": 211
+ },
+ {
+   "FIELD1": ".DMD",
+   "FIELD2": "SQL Developer Data Modeler File",
+   "FIELD3": 211
+ },
+ {
+   "FIELD1": ".EX",
+   "FIELD2": "Euphoria Source Code",
+   "FIELD3": 212
+ },
+ {
+   "FIELD1": ".SB3",
+   "FIELD2": "Scratch 3.0 Project File",
+   "FIELD3": 212
+ },
+ {
+   "FIELD1": ".GEM",
+   "FIELD2": "RubyGems Package",
+   "FIELD3": 212
+ },
+ {
+   "FIELD1": ".D",
+   "FIELD2": "D Source Code File",
+   "FIELD3": 213
+ },
+ {
+   "FIELD1": ".DTD",
+   "FIELD2": "Document Type Definition File",
+   "FIELD3": 213
+ },
+ {
+   "FIELD1": ".MK",
+   "FIELD2": "Makefile",
+   "FIELD3": 213
+ },
+ {
+   "FIELD1": ".RC",
+   "FIELD2": "Resource Script",
+   "FIELD3": 214
+ },
+ {
+   "FIELD1": ".ADS",
+   "FIELD2": "Ada Specification File",
+   "FIELD3": 214
+ },
+ {
+   "FIELD1": ".ALB",
+   "FIELD2": "Alpha Five Library",
+   "FIELD3": 214
+ },
+ {
+   "FIELD1": ".BAS",
+   "FIELD2": "BASIC Source Code File",
+   "FIELD3": 215
+ },
+ {
+   "FIELD1": ".PL",
+   "FIELD2": "Perl Script",
+   "FIELD3": 215
+ },
+ {
+   "FIELD1": ".GM81",
+   "FIELD2": "Game Maker 8.1 Project File",
+   "FIELD3": 215
+ },
+ {
+   "FIELD1": ".R",
+   "FIELD2": "R Script File",
+   "FIELD3": 217
+ },
+ {
+   "FIELD1": ".SYM",
+   "FIELD2": "Symbols File",
+   "FIELD3": 217
+ },
+ {
+   "FIELD1": ".NXC",
+   "FIELD2": "Not eXactly C Source Code File",
+   "FIELD3": 217
+ },
+ {
+   "FIELD1": ".SMALI",
+   "FIELD2": "Android Smali Assembly Language File",
+   "FIELD3": 217
+ },
+ {
+   "FIELD1": ".LNT",
+   "FIELD2": "PC-lint/FlexeLint Configuration File",
+   "FIELD3": 217
+ },
+ {
+   "FIELD1": ".SO",
+   "FIELD2": "Shared Library",
+   "FIELD3": 217
+ },
+ {
+   "FIELD1": ".CP",
+   "FIELD2": "Captivate Source File",
+   "FIELD3": 220
+ },
+ {
+   "FIELD1": ".SSI",
+   "FIELD2": "Adobe Dreamweaver Server Side Include File",
+   "FIELD3": 220
+ },
+ {
+   "FIELD1": ".CTP",
+   "FIELD2": "CakePHP Template",
+   "FIELD3": 220
+ },
+ {
+   "FIELD1": ".RUL",
+   "FIELD2": "InstallShield Rules File",
+   "FIELD3": 222
+ },
+ {
+   "FIELD1": ".FRX",
+   "FIELD2": "Visual Basic Binary Form File",
+   "FIELD3": 222
+ },
+ {
+   "FIELD1": ".AU3",
+   "FIELD2": "AutoIt v3 Script",
+   "FIELD3": 222
+ },
+ {
+   "FIELD1": ".FXML",
+   "FIELD2": "FXML Source Code File",
+   "FIELD3": 225
+ },
+ {
+   "FIELD1": ".RDLC",
+   "FIELD2": "Visual Studio Client Report Definition File",
+   "FIELD3": 225
+ },
+ {
+   "FIELD1": ".IPR",
+   "FIELD2": "InstallShield Professional Project File",
+   "FIELD3": 225
+ },
+ {
+   "FIELD1": ".FXC",
+   "FIELD2": "FilePackager Configuration",
+   "FIELD3": 225
+ },
+ {
+   "FIELD1": ".XT",
+   "FIELD2": "Xdebug Trace File",
+   "FIELD3": 225
+ },
+ {
+   "FIELD1": ".OMO",
+   "FIELD2": "OMake Object File",
+   "FIELD3": 225
+ },
+ {
+   "FIELD1": ".SMA",
+   "FIELD2": "AMX Mod Plugin Source File",
+   "FIELD3": 225
+ },
+ {
+   "FIELD1": ".PPC",
+   "FIELD2": "Mobile Data Studio Project File",
+   "FIELD3": 225
+ },
+ {
+   "FIELD1": ".ASI",
+   "FIELD2": "Alpha Five Variable File",
+   "FIELD3": 226
+ },
+ {
+   "FIELD1": ".VHD",
+   "FIELD2": "VHDL Source File",
+   "FIELD3": 227
+ },
+ {
+   "FIELD1": ".SCC",
+   "FIELD2": "SourceSafe Source Code Control File",
+   "FIELD3": 228
+ },
+ {
+   "FIELD1": ".DIFF",
+   "FIELD2": "Patch File",
+   "FIELD3": 229
+ },
+ {
+   "FIELD1": ".REXX",
+   "FIELD2": "Rexx Source File",
+   "FIELD3": 229
+ },
+ {
+   "FIELD1": ".M4",
+   "FIELD2": "Macro Processor Library",
+   "FIELD3": 229
+ },
+ {
+   "FIELD1": ".WORKSPACE",
+   "FIELD2": "Code::Blocks Workspace File",
+   "FIELD3": 230
+ },
+ {
+   "FIELD1": ".CXP",
+   "FIELD2": "CX-Programmer Project File",
+   "FIELD3": 230
+ },
+ {
+   "FIELD1": ".T",
+   "FIELD2": "Turing Source Code File",
+   "FIELD3": 230
+ },
+ {
+   "FIELD1": ".IML",
+   "FIELD2": "IntelliJ IDEA Module",
+   "FIELD3": 231
+ },
+ {
+   "FIELD1": ".APPXUPLOAD",
+   "FIELD2": "Windows 8 App Upload Package",
+   "FIELD3": 231
+ },
+ {
+   "FIELD1": ".CSP",
+   "FIELD2": "Caché Server Page",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".DBPROJ",
+   "FIELD2": "Visual Studio Database Project File",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".PYW",
+   "FIELD2": "Python GUI Source File",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".AM4",
+   "FIELD2": "AutoPlay Media Studio 4 Project File",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".F",
+   "FIELD2": "Fortran Source Code",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".TESTSETTINGS",
+   "FIELD2": "Visual Studio Test Settings File",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".CSX",
+   "FIELD2": "Visual C# Script",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".AWK",
+   "FIELD2": "AWK Script",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".HH",
+   "FIELD2": "C++ Header File",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".JSPF",
+   "FIELD2": "Java Server Page Fragment",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".PYD",
+   "FIELD2": "Python Dynamic Module",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".MM",
+   "FIELD2": "Objective-C++ Source File",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".PBK",
+   "FIELD2": "Pixel Bender Kernel File",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".PBXUSER",
+   "FIELD2": "Xcode Project User Data File",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".OCTEST",
+   "FIELD2": "Xcode Objective-C Unit Test Bundle",
+   "FIELD3": 233
+ },
+ {
+   "FIELD1": ".HBS",
+   "FIELD2": "Handlebars Template",
+   "FIELD3": 234
+ },
+ {
+   "FIELD1": ".CBP",
+   "FIELD2": "Code::Blocks Project File",
+   "FIELD3": 235
+ },
+ {
+   "FIELD1": ".ASC",
+   "FIELD2": "ActionScript Communication File",
+   "FIELD3": 236
+ },
+ {
+   "FIELD1": ".AS",
+   "FIELD2": "ActionScript File",
+   "FIELD3": 237
+ },
+ {
+   "FIELD1": ".PAS",
+   "FIELD2": "Pascal Source File",
+   "FIELD3": 237
+ },
+ {
+   "FIELD1": ".IPCH",
+   "FIELD2": "Intellisense Precompiled Header File",
+   "FIELD3": 237
+ },
+ {
+   "FIELD1": ".TT",
+   "FIELD2": "Visual Studio Text Template",
+   "FIELD3": 237
+ },
+ {
+   "FIELD1": ".L",
+   "FIELD2": "Lex Source File",
+   "FIELD3": 237
+ },
+ {
+   "FIELD1": ".H",
+   "FIELD2": "C/C++/Objective-C Header File",
+   "FIELD3": 238
+ },
+ {
+   "FIELD1": ".CC",
+   "FIELD2": "C++ Source Code File",
+   "FIELD3": 239
+ },
+ {
+   "FIELD1": ".W",
+   "FIELD2": "OpenEdge Architect Source Code File",
+   "FIELD3": 240
+ },
+ {
+   "FIELD1": ".XCWORKSPACE",
+   "FIELD2": "Xcode Workspace File",
+   "FIELD3": 240
+ },
+ {
+   "FIELD1": ".IDL",
+   "FIELD2": "Interface Definition Language File",
+   "FIELD3": 240
+ },
+ {
+   "FIELD1": ".VM",
+   "FIELD2": "Velocity Template",
+   "FIELD3": 241
+ },
+ {
+   "FIELD1": ".SVN-BASE",
+   "FIELD2": "Subversion Base File",
+   "FIELD3": 242
+ },
+ {
+   "FIELD1": ".FRAMEWORK",
+   "FIELD2": "Mac OS X Application Framework",
+   "FIELD3": 243
+ },
+ {
+   "FIELD1": ".PM",
+   "FIELD2": "Perl Module",
+   "FIELD3": 243
+ },
+ {
+   "FIELD1": ".AUTOPLAY",
+   "FIELD2": "AutoPlay Media Studio Project File",
+   "FIELD3": 244
+ },
+ {
+   "FIELD1": ".RB",
+   "FIELD2": "Ruby Source Code",
+   "FIELD3": 244
+ },
+ {
+   "FIELD1": ".I",
+   "FIELD2": "Visual Studio Intermediate File",
+   "FIELD3": 244
+ },
+ {
+   "FIELD1": ".YAML",
+   "FIELD2": "YAML Document",
+   "FIELD3": 244
+ },
+ {
+   "FIELD1": ".V",
+   "FIELD2": "Verilog Source Code File",
+   "FIELD3": 245
+ },
+ {
+   "FIELD1": ".RSRC",
+   "FIELD2": "Macintosh Resource File",
+   "FIELD3": 245
+ },
+ {
+   "FIELD1": ".SC",
+   "FIELD2": "SuperCollider Source Code File",
+   "FIELD3": 246
+ },
+ {
+   "FIELD1": ".CDF",
+   "FIELD2": "CryENGINE Character Definition File",
+   "FIELD3": 246
+ },
+ {
+   "FIELD1": ".APS",
+   "FIELD2": "Visual C++ Resource File",
+   "FIELD3": 246
+ },
+ {
+   "FIELD1": ".ISM",
+   "FIELD2": "InstallShield Project File",
+   "FIELD3": 246
+ },
+ {
+   "FIELD1": ".M",
+   "FIELD2": "Objective-C Implementation File",
+   "FIELD3": 247
+ },
+ {
+   "FIELD1": ".FSSCRIPT",
+   "FIELD2": "Visual F# Script",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".WDL",
+   "FIELD2": "World Definition Language Script",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".IPR",
+   "FIELD2": "IntelliJ IDEA Project File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".IWB",
+   "FIELD2": "IWBasic Source Code File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".LTB",
+   "FIELD2": "LithTech Binary File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".XCCONFIG",
+   "FIELD2": "Xcode Configuration Settings File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".XPP",
+   "FIELD2": "X++ Source Code File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".PH",
+   "FIELD2": "Perl Header File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".NVV",
+   "FIELD2": "NVIDIA Vertex Shader File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".JSFL",
+   "FIELD2": "Animate JSFL Script File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".ERB",
+   "FIELD2": "Ruby ERB Script",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".PYX",
+   "FIELD2": "Pyrex Source Code File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".DSGM",
+   "FIELD2": "DS Game Maker Project",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".PRO",
+   "FIELD2": "Qt Project File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".SLTNG",
+   "FIELD2": "StarLogo TNG Project File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".MV",
+   "FIELD2": "MivaScript File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".VBG",
+   "FIELD2": "Visual Basic Project Group File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".PTL",
+   "FIELD2": "Rational Rose Petal File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".XAML",
+   "FIELD2": "XAML File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".DF1",
+   "FIELD2": "Omnis Native Datafile",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".AGI",
+   "FIELD2": "Asterisk Gateway Interface File",
+   "FIELD3": 250
+ },
+ {
+   "FIELD1": ".BB",
+   "FIELD2": "Blitz Source Code File",
+   "FIELD3": 253
+ },
+ {
+   "FIELD1": ".MRT",
+   "FIELD2": "Stimulsoft Report File",
+   "FIELD3": 253
+ },
+ {
+   "FIELD1": ".CU",
+   "FIELD2": "CUDA Source Code File",
+   "FIELD3": 255
+ },
+ {
+   "FIELD1": ".WSP",
+   "FIELD2": "SharePoint Solution Package",
+   "FIELD3": 256
+ },
+ {
+   "FIELD1": ".DPL",
+   "FIELD2": "Delphi Package Library",
+   "FIELD3": 256
+ },
+ {
+   "FIELD1": ".CXX",
+   "FIELD2": "C++ Source Code File",
+   "FIELD3": 256
+ },
+ {
+   "FIELD1": ".INC",
+   "FIELD2": "Include File",
+   "FIELD3": 256
+ },
+ {
+   "FIELD1": ".HXX",
+   "FIELD2": "C++ Source Code Header File",
+   "FIELD3": 257
+ },
+ {
+   "FIELD1": ".MCP",
+   "FIELD2": "CodeWarrior Project",
+   "FIELD3": 257
+ },
+ {
+   "FIELD1": ".OWL",
+   "FIELD2": "OWL Source Code File",
+   "FIELD3": 257
+ },
+ {
+   "FIELD1": ".A2W",
+   "FIELD2": "Alice World",
+   "FIELD3": 257
+ },
+ {
+   "FIELD1": ".PL1",
+   "FIELD2": "PL/I Source Code",
+   "FIELD3": 260
+ },
+ {
+   "FIELD1": ".CP",
+   "FIELD2": "Xcode C++ Source File",
+   "FIELD3": 260
+ },
+ {
+   "FIELD1": ".GCH",
+   "FIELD2": "Precompiled Header File",
+   "FIELD3": 260
+ },
+ {
+   "FIELD1": ".CBL",
+   "FIELD2": "COBOL Source Code File",
+   "FIELD3": 260
+ },
+ {
+   "FIELD1": ".NBC",
+   "FIELD2": "Next Byte Codes Source Code File",
+   "FIELD3": 260
+ },
+ {
+   "FIELD1": ".M",
+   "FIELD2": "MATLAB Source Code File",
+   "FIELD3": 260
+ },
+ {
+   "FIELD1": ".PKGDEF",
+   "FIELD2": "Visual Studio Shell File",
+   "FIELD3": 260
+ },
+ {
+   "FIELD1": ".SRC",
+   "FIELD2": "Source Code",
+   "FIELD3": 260
+ },
+ {
+   "FIELD1": ".SUP",
+   "FIELD2": "Super Project Definition File",
+   "FIELD3": 262
+ },
+ {
+   "FIELD1": ".LIVECODE",
+   "FIELD2": "LiveCode Stack File",
+   "FIELD3": 262
+ },
+ {
+   "FIELD1": ".HAL",
+   "FIELD2": "HansaWorld Application Language File",
+   "FIELD3": 262
+ },
+ {
+   "FIELD1": ".PRI",
+   "FIELD2": "Package Resource Index File",
+   "FIELD3": 262
+ },
+ {
+   "FIELD1": ".PBXPROJ",
+   "FIELD2": "Xcode Project Data File",
+   "FIELD3": 264
+ },
+ {
+   "FIELD1": ".ASM",
+   "FIELD2": "Visual Studio Assembler Source Code File",
+   "FIELD3": 264
+ },
+ {
+   "FIELD1": ".WXS",
+   "FIELD2": "WiX Source File",
+   "FIELD3": 265
+ },
+ {
+   "FIELD1": ".XOML",
+   "FIELD2": "Windows Workflow File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".SUD",
+   "FIELD2": "Super Project Analyzer File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".CLS",
+   "FIELD2": "Program Class File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".VSSSCC",
+   "FIELD2": "Visual Studio Solution Source Control File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".LISP",
+   "FIELD2": "Lisp Source Code File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".V11.SUO",
+   "FIELD2": "Visual Studio 2012 Solution User Options File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".EDML",
+   "FIELD2": "Adobe Extension Data Markup Language Document",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".SS",
+   "FIELD2": "SilverStripe Source Code File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".FORTH",
+   "FIELD2": "Forth Language File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".MSHA",
+   "FIELD2": "Microsoft Help Asset File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".XOJO_XML_PROJECT",
+   "FIELD2": "Xojo XML Project File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".PCP",
+   "FIELD2": "Windows Installer Patch Creation Properties File",
+   "FIELD3": 267
+ },
+ {
+   "FIELD1": ".EXP",
+   "FIELD2": "Symbols Export File",
+   "FIELD3": 268
+ },
+ {
+   "FIELD1": ".V",
+   "FIELD2": "Coq Source Code File",
+   "FIELD3": 270
+ },
+ {
+   "FIELD1": ".VC",
+   "FIELD2": "Verge Code File",
+   "FIELD3": 270
+ },
+ {
+   "FIELD1": ".DBML",
+   "FIELD2": "Visual Studio OR Design File",
+   "FIELD3": 271
+ },
+ {
+   "FIELD1": ".TWIG",
+   "FIELD2": "Twig Template",
+   "FIELD3": 271
+ },
+ {
+   "FIELD1": ".BSC",
+   "FIELD2": "Visual Studio Source Browser Information File",
+   "FIELD3": 271
+ },
+ {
+   "FIELD1": ".PL",
+   "FIELD2": "Prolog Source Code File",
+   "FIELD3": 273
+ },
+ {
+   "FIELD1": ".POT",
+   "FIELD2": "Portable Object File",
+   "FIELD3": 273
+ },
+ {
+   "FIELD1": ".PDE",
+   "FIELD2": "Processing Development Environment Source Code File",
+   "FIELD3": 273
+ },
+ {
+   "FIELD1": ".NW",
+   "FIELD2": "Node-Webkit App Package",
+   "FIELD3": 275
+ },
+ {
+   "FIELD1": ".LICENSES",
+   "FIELD2": "Visual Studio Licensed Classes File",
+   "FIELD3": 275
+ },
+ {
+   "FIELD1": ".IST",
+   "FIELD2": "InstallShield Project Template File",
+   "FIELD3": 275
+ },
+ {
+   "FIELD1": ".IDT",
+   "FIELD2": "Windows Installer Database Text Archive File",
+   "FIELD3": 275
+ },
+ {
+   "FIELD1": ".PLC",
+   "FIELD2": "PL/B Source File",
+   "FIELD3": 275
+ },
+ {
+   "FIELD1": ".SAS",
+   "FIELD2": "SAS Program File",
+   "FIELD3": 275
+ },
+ {
+   "FIELD1": ".PLI",
+   "FIELD2": "PL/I Source Code File",
+   "FIELD3": 275
+ },
+ {
+   "FIELD1": ".UML",
+   "FIELD2": "UML Data Object Model",
+   "FIELD3": 277
+ },
+ {
+   "FIELD1": ".MER",
+   "FIELD2": "RSView Development Runtime File",
+   "FIELD3": 278
+ },
+ {
+   "FIELD1": ".A",
+   "FIELD2": "Static Library",
+   "FIELD3": 279
+ },
+ {
+   "FIELD1": ".KPL",
+   "FIELD2": "Kids Programming Language File",
+   "FIELD3": 280
+ },
+ {
+   "FIELD1": ".INL",
+   "FIELD2": "C++ Inline File",
+   "FIELD3": 280
+ },
+ {
+   "FIELD1": ".DOB",
+   "FIELD2": "Visual Basic UserDocument",
+   "FIELD3": 280
+ },
+ {
+   "FIELD1": ".JIC",
+   "FIELD2": "JTAG Indirect Configuration File",
+   "FIELD3": 280
+ },
+ {
+   "FIELD1": ".CSI",
+   "FIELD2": "ContentServ Include File",
+   "FIELD3": 282
+ },
+ {
+   "FIELD1": ".CTL",
+   "FIELD2": "Visual Basic UserControl Object File",
+   "FIELD3": 283
+ },
+ {
+   "FIELD1": ".CTXT",
+   "FIELD2": "BlueJ Context File",
+   "FIELD3": 286
+ },
+ {
+   "FIELD1": ".RESW",
+   "FIELD2": "Windows Resources File",
+   "FIELD3": 287
+ },
+ {
+   "FIELD1": ".HPF",
+   "FIELD2": "High Performance Fortran File",
+   "FIELD3": 287
+ },
+ {
+   "FIELD1": ".NSI",
+   "FIELD2": "NSIS Script",
+   "FIELD3": 289
+ },
+ {
+   "FIELD1": ".PXD",
+   "FIELD2": "Pyrex Definition File",
+   "FIELD3": 290
+ },
+ {
+   "FIELD1": ".GITIGNORE",
+   "FIELD2": "Git Ignore File",
+   "FIELD3": 291
+ },
+ {
+   "FIELD1": ".WIXLIB",
+   "FIELD2": "WiX Library File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".PRI",
+   "FIELD2": "Qt Project Include File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".DM1",
+   "FIELD2": "ER/Studio Data Model File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".VDM",
+   "FIELD2": "VDM Specification File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".EXW",
+   "FIELD2": "Euphoria Source code File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".TMPROJ",
+   "FIELD2": "TextMate Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".XQM",
+   "FIELD2": "XQuery Module",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".BBPROJECT",
+   "FIELD2": "BBEdit Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".TPU",
+   "FIELD2": "Turbo Pascal Unit",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".SLOGO",
+   "FIELD2": "StarLogo Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".TMLANGUAGE",
+   "FIELD2": "TextMate Language Grammar File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".APPXMANIFEST",
+   "FIELD2": "Windows 10 App Manifest",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".WIXPDB",
+   "FIELD2": "WiX Debug File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".XQL",
+   "FIELD2": "XML Query Language File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".HAS",
+   "FIELD2": "Haskell Script",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".P3D",
+   "FIELD2": "Panda3D Multifile",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".WIXOUT",
+   "FIELD2": "WiX XML Output File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".FSPROJ",
+   "FIELD2": "FireStarter Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".DEC",
+   "FIELD2": "Declaration File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".NQC",
+   "FIELD2": "Not Quite C Source Code File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".WDGT",
+   "FIELD2": "Adobe Captivate Widget File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".LUCIDSNIPPET",
+   "FIELD2": "Lucid Snippet File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".JCP",
+   "FIELD2": "JCreator Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".PKGUNDEF",
+   "FIELD2": "Visual Studio Shell File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".NEKO",
+   "FIELD2": "Neko Source Code File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".FGL",
+   "FIELD2": "Fifth Generation Language Source File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".SRC.RPM",
+   "FIELD2": "Red Hat Package Manager Source File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".NSH",
+   "FIELD2": "NSIS Header File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".VSPSCC",
+   "FIELD2": "Visual Studio Project Source Control File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".GED",
+   "FIELD2": "Game Editor Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".AM5",
+   "FIELD2": "AutoPlay Media Studio 5 Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".RISE",
+   "FIELD2": "RISE Editor Model File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".SNIPPET",
+   "FIELD2": "Visual Studio IntelliSense Code Snippet",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".WDP",
+   "FIELD2": "Windev Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".EQL",
+   "FIELD2": "Embedded SQL File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".WPW",
+   "FIELD2": "WinDev Mobile Window File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".GAMEPROJ",
+   "FIELD2": "GameSalad Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".RESJSON",
+   "FIELD2": "Windows JavaScript Resources File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".FTN",
+   "FIELD2": "Fortran Source Code File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".VBZ",
+   "FIELD2": "Visual Basic Project Template",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".GSZIP",
+   "FIELD2": "GameSalad Marketplace Asset File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".FXCPROJ",
+   "FIELD2": "FX Composer Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".RBP",
+   "FIELD2": "Real Studio Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".XOJO_BINARY_PROJECT",
+   "FIELD2": "Xojo Binary Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".DCUIL",
+   "FIELD2": "Delphi .NET Compiled Unit File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".FBZ7",
+   "FIELD2": "Compressed FinalBuilder 7 Project",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".CCGAME",
+   "FIELD2": "XNA Creators Club Game Package",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".JPR",
+   "FIELD2": "JBuilder Project",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".PRG",
+   "FIELD2": "RAPID Program File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".MOM",
+   "FIELD2": "Managed Object Model",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".PLE",
+   "FIELD2": "Messenger Plus! Live Encrypted Log File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".SCRIPTTERMINOLOGY",
+   "FIELD2": "AppleScript Script Terminology File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".MAK",
+   "FIELD2": "Makefile",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".LICX",
+   "FIELD2": "Visual Studio License File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".GMO",
+   "FIELD2": "GNU Machine Object File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".TUR",
+   "FIELD2": "Turing Program Source File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".WDGTPROJ",
+   "FIELD2": "Dashcode Widget Project",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".MDZIP",
+   "FIELD2": "MagicDraw Project Archive",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".VSPX",
+   "FIELD2": "Visual Studio Performance Report Data File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".TLI",
+   "FIELD2": "Typelib Generated C/C++ Inline File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".TLH",
+   "FIELD2": "Typelib Generated C/C++ Header File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".PJX",
+   "FIELD2": "FoxPro Project",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".PDM",
+   "FIELD2": "VB Project Information File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".XCSNAPSHOTS",
+   "FIELD2": "Xcode Snapshot",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".GEMSPEC",
+   "FIELD2": "Gem Specification File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".BPG",
+   "FIELD2": "Borland Project Group",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".CCP",
+   "FIELD2": "CodeCharge Studio Page File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".XOJO_MENU",
+   "FIELD2": "Xojo Menu File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".ADDIN",
+   "FIELD2": "Visual Studio Add-in Definition File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".GS3",
+   "FIELD2": "GameStarter File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".BCP",
+   "FIELD2": "Borland C++ Makefile",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".GM6",
+   "FIELD2": "GameMaker 6 Project File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".FXL",
+   "FIELD2": "FaceFX Language File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".COB",
+   "FIELD2": "COBOL Source Code File",
+   "FIELD3": 300
+ },
+ {
+   "FIELD1": ".C",
+   "FIELD2": "Lite-C Script",
+   "FIELD3": 304
+ },
+ {
+   "FIELD1": ".TDS",
+   "FIELD2": "Turbo Debugger Symbols File",
+   "FIELD3": 309
+ },
+ {
+   "FIELD1": ".TNS",
+   "FIELD2": "TI-Nspire Document",
+   "FIELD3": 309
+ },
+ {
+   "FIELD1": ".TCL",
+   "FIELD2": "Tcl Script",
+   "FIELD3": 311
+ },
+ {
+   "FIELD1": ".CAF",
+   "FIELD2": "CryENGINE Character Animation File",
+   "FIELD3": 311
+ },
+ {
+   "FIELD1": ".DBA",
+   "FIELD2": "CryENGINE Animation Database File",
+   "FIELD3": 318
+ },
+ {
+   "FIELD1": ".LPROJ",
+   "FIELD2": "Localized Project Folder",
+   "FIELD3": 320
+ },
+ {
+   "FIELD1": ".DSP",
+   "FIELD2": "Visual C++ 6 Project",
+   "FIELD3": 325
+ },
+ {
+   "FIELD1": ".DPK",
+   "FIELD2": "Delphi Package",
+   "FIELD3": 325
+ },
+ {
+   "FIELD1": ".4TH",
+   "FIELD2": "Forth Language File",
+   "FIELD3": 325
+ },
+ {
+   "FIELD1": ".MOD",
+   "FIELD2": "Fortran Module File",
+   "FIELD3": 329
+ },
+ {
+   "FIELD1": ".XIB",
+   "FIELD2": "Interface Builder File",
+   "FIELD3": 329
+ },
+ {
+   "FIELD1": ".RKT",
+   "FIELD2": "Racket Source Code File",
+   "FIELD3": 333
+ },
+ {
+   "FIELD1": ".PCH",
+   "FIELD2": "Precompiled Header File",
+   "FIELD3": 333
+ },
+ {
+   "FIELD1": ".RNC",
+   "FIELD2": "RELAX NG Compact Syntax File",
+   "FIELD3": 333
+ },
+ {
+   "FIELD1": ".BBPROJECTD",
+   "FIELD2": "BBEdit Project Document",
+   "FIELD3": 333
+ },
+ {
+   "FIELD1": ".PSC",
+   "FIELD2": "Papyrus Script",
+   "FIELD3": 333
+ },
+ {
+   "FIELD1": ".GREENFOOT",
+   "FIELD2": "Greenfoot Project Archive",
+   "FIELD3": 333
+ },
+ {
+   "FIELD1": ".ENT",
+   "FIELD2": "External Entity",
+   "FIELD3": 337
+ },
+ {
+   "FIELD1": ".XCODEPROJ",
+   "FIELD2": "Xcode Project",
+   "FIELD3": 338
+ },
+ {
+   "FIELD1": ".XCARCHIVE",
+   "FIELD2": "Xcode Archive",
+   "FIELD3": 340
+ },
+ {
+   "FIELD1": ".MPR",
+   "FIELD2": "FoxPro Generated Menu Program",
+   "FIELD3": 340
+ },
+ {
+   "FIELD1": ".SPEC",
+   "FIELD2": "RPM Specification File",
+   "FIELD3": 340
+ },
+ {
+   "FIELD1": ".RAV",
+   "FIELD2": "Rave Reports Project File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".XOJO_PROJECT",
+   "FIELD2": "Xojo Project File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".CSN",
+   "FIELD2": "Adobe Code Snippet Document",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".SBPROJ",
+   "FIELD2": "OpenGL Shader Builder Project",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".PSM1",
+   "FIELD2": "Windows PowerShell Script Module File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".P",
+   "FIELD2": "Pascal Source Code",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".MSP",
+   "FIELD2": "MaxScript Page File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".PRG",
+   "FIELD2": "Visual FoxPro Program File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".VSMPROJ",
+   "FIELD2": "Visual Studio Text Macro Project",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".BS2",
+   "FIELD2": "BASIC Stamp 2 Code File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".VTML",
+   "FIELD2": "Visual Tool Markup Language File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".VTV",
+   "FIELD2": "Adobe Dreamweaver Validator Configuration File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".WXL",
+   "FIELD2": "WiX Localization File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".VSMDI",
+   "FIELD2": "Visual Studio Test Metadata File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".POD",
+   "FIELD2": "Perl POD File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".R",
+   "FIELD2": "Rez Source Code File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".LSPROJ",
+   "FIELD2": "Visual Studio LightSwitch Project",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".CVSRC",
+   "FIELD2": "CVS Command File",
+   "FIELD3": 350
+ },
+ {
+   "FIELD1": ".ACD",
+   "FIELD2": "RSLogix 5000 Program",
+   "FIELD3": 355
+ },
+ {
+   "FIELD1": ".RSS",
+   "FIELD2": "Symbian Application Resource File",
+   "FIELD3": 360
+ },
+ {
+   "FIELD1": ".BRX",
+   "FIELD2": "BREW Application Resource File",
+   "FIELD3": 360
+ },
+ {
+   "FIELD1": ".ODL",
+   "FIELD2": "Object Description Language File",
+   "FIELD3": 367
+ },
+ {
+   "FIELD1": ".DFM",
+   "FIELD2": "Delphi Form",
+   "FIELD3": 371
+ },
+ {
+   "FIELD1": ".CSI",
+   "FIELD2": "EdLog Program Data File",
+   "FIELD3": 372
+ },
+ {
+   "FIELD1": ".LHS",
+   "FIELD2": "Literate Haskell Script",
+   "FIELD3": 375
+ },
+ {
+   "FIELD1": ".VGC",
+   "FIELD2": "ViziGen Code Generation Template",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".LIT",
+   "FIELD2": "Literate Haskell Script",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".WXI",
+   "FIELD2": "WiX Include File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".ARTPROJ",
+   "FIELD2": "Artifacts Project",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".DBO",
+   "FIELD2": "DarkBASIC Object",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".SCRIPTSUITE",
+   "FIELD2": "AppleScript Script Suite File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".MAGIK",
+   "FIELD2": "Magik Source Code File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".WIXOBJ",
+   "FIELD2": "WiX Object File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".NFM",
+   "FIELD2": "Delphi .NET Form File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".DEVICEIDS",
+   "FIELD2": "Device Identification FIle",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".VSP",
+   "FIELD2": "Visual Studio Performance Report File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".DBPRO",
+   "FIELD2": "DarkBASIC Professional Project File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".DBA",
+   "FIELD2": "DarkBASIC Source Code File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".CFC",
+   "FIELD2": "ColdFusion Component File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".FSI",
+   "FIELD2": "Visual F# Signature File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".SSC",
+   "FIELD2": "SourceSafe Status File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".XQUERY",
+   "FIELD2": "XQuery Source Code File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".VCP",
+   "FIELD2": "eMbedded Visual C++ Project File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".WIXMSP",
+   "FIELD2": "WiX XML Patch File",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".DCU",
+   "FIELD2": "Delphi Compiled Unit",
+   "FIELD3": 400
+ },
+ {
+   "FIELD1": ".GROOVY",
+   "FIELD2": "Groovy Source Code File",
+   "FIELD3": 417
+ },
+ {
+   "FIELD1": ".WIXPROJ",
+   "FIELD2": "WiX Project File",
+   "FIELD3": 425
+ },
+ {
+   "FIELD1": ".TU",
+   "FIELD2": "Turing Source File",
+   "FIELD3": 433
+ },
+ {
+   "FIELD1": ".GMD",
+   "FIELD2": "Game Maker Program Code",
+   "FIELD3": 440
+ },
+ {
+   "FIELD1": ".JPX",
+   "FIELD2": "JBuilder Project",
+   "FIELD3": 450
+ },
+ {
+   "FIELD1": ".R",
+   "FIELD2": "REBOL Script",
+   "FIELD3": 480
+ }
+]
