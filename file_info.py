@@ -8,9 +8,9 @@
 # Imports
 import os
 import mimetypes
-import file_extension_to_human_readable
-import file_extension_desc
-import type_data
+import data.ext_to_human_readable
+import data.extension_desc
+import data.type
 
 ########## TOOLS ##########
 def get_size(bytes, suffix="B"):
@@ -198,70 +198,70 @@ def type(file):
     file_extension = extension(file)
     if os.path.isdir(correct_path):
         type = 'Folder/Directory'
-    elif file_extension in type_data.archive():
+    elif file_extension in data.type.archive():
         type = 'Archive'
-    elif file_extension in type_data.audio():
+    elif file_extension in data.type.audio():
         type = 'Audio'
-    elif file_extension in type_data.backup():
+    elif file_extension in data.type.backup():
         type = 'Backup'
-    elif file_extension in type_data.book():
+    elif file_extension in data.type.book():
         type = 'eBook'
-    elif file_extension in type_data.database():
+    elif file_extension in data.type.database():
         type = 'Database File'
-    elif file_extension in type_data.developer():
+    elif file_extension in data.type.developer():
         type = 'Developer'
-    elif file_extension in type_data.disk_image():
+    elif file_extension in data.type.disk_image():
         type = 'Disk Image'
-    elif file_extension in type_data.encoded():
+    elif file_extension in data.type.encoded():
         type = 'Encoded File'
-    elif file_extension in type_data.executable():
+    elif file_extension in data.type.executable():
         type = 'Application/Executable'
-    elif file_extension in type_data.developer():
+    elif file_extension in data.type.developer():
         type = 'Developer'
-    elif file_extension in type_data.font():
+    elif file_extension in data.type.font():
         type = 'Font'
-    elif file_extension in type_data.image_3d():
+    elif file_extension in data.type.image_3d():
         type = '3D Image'
-    elif file_extension in type_data.plugin():
+    elif file_extension in data.type.plugin():
         type = 'Plugin'
-    elif file_extension in type_data.preset():
+    elif file_extension in data.type.preset():
         type = 'Preset/Settings'
-    elif file_extension in type_data.raster_image():
+    elif file_extension in data.type.raster_image():
         type = 'Image'
-    elif file_extension in type_data.raw_image():
+    elif file_extension in data.type.raw_image():
         type = 'Raw Image'
-    elif file_extension in type_data.rom():
+    elif file_extension in data.type.rom():
         type = 'ROM/Game File'
-    elif file_extension in type_data.spreadsheet():
+    elif file_extension in data.type.spreadsheet():
         type = 'Spreadsheet'
-    elif file_extension in type_data.system():
+    elif file_extension in data.type.system():
         type = 'System File'
-    elif file_extension in type_data.text():
+    elif file_extension in data.type.text():
         type = 'Text File'
-    elif file_extension in type_data.vector_image():
+    elif file_extension in data.type.vector_image():
         type = 'Vector Image'
-    elif file_extension in type_data.video():
+    elif file_extension in data.type.video():
         type = 'Video'
-    elif file_extension in type_data.web():
+    elif file_extension in data.type.web():
         type = 'Web Document'
     else:
         type = 'unknown'
     return type
 
 def extension_to_human_readable(file_ext):
-    result = file_extension_to_human_readable.file_extension_to_human_readable(file_ext)
+    result = data.ext_to_human_readable.file_extension_to_human_readable(file_ext)
     return result
 
 def extension_info(file_ext):
-    result = file_extension_desc.extension_info(file_ext)
+    result = data.extension_desc.extension_info(file_ext)
     return result
 
 def extension_description(file_ext):
-    result = file_extension_desc.extension_description(file_ext)
+    result = data.extension_desc.extension_description(file_ext)
     return result
 
 def extension_usage(file_ext):
-    result = file_extension_desc.extension_usage(file_ext)
+    result = data.extension_desc.extension_usage(file_ext)
     return result
 
 
@@ -384,7 +384,7 @@ def info(file):
     return file_info
 
 
-
+"""
 # Testing
 
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -395,3 +395,4 @@ print('{')
 for info in results:
     print(info + ': ' + str(results[info]))
 print('     }')
+"""
