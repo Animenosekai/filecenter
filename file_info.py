@@ -1,7 +1,7 @@
 #                                  File Info
 #
 # for Python 3
-# ©Anime no Sekai - 2020
+# © Anime no Sekai - 2020
 #
 
 
@@ -248,12 +248,65 @@ def type(file):
         type = 'unknown'
     return type
 
+def extension_type(ext):
+    file_extension = ext
+    if file_extension in data.type.archive():
+        type = 'Archive'
+    elif file_extension in data.type.audio():
+        type = 'Audio'
+    elif file_extension in data.type.backup():
+        type = 'Backup'
+    elif file_extension in data.type.book():
+        type = 'eBook'
+    elif file_extension in data.type.database():
+        type = 'Database File'
+    elif file_extension in data.type.developer():
+        type = 'Developer'
+    elif file_extension in data.type.disk_image():
+        type = 'Disk Image'
+    elif file_extension in data.type.encoded():
+        type = 'Encoded File'
+    elif file_extension in data.type.executable():
+        type = 'Application/Executable'
+    elif file_extension in data.type.developer():
+        type = 'Developer'
+    elif file_extension in data.type.font():
+        type = 'Font'
+    elif file_extension in data.type.image_3d():
+        type = '3D Image'
+    elif file_extension in data.type.plugin():
+        type = 'Plugin'
+    elif file_extension in data.type.preset():
+        type = 'Preset/Settings'
+    elif file_extension in data.type.raster_image():
+        type = 'Image'
+    elif file_extension in data.type.raw_image():
+        type = 'Raw Image'
+    elif file_extension in data.type.rom():
+        type = 'ROM/Game File'
+    elif file_extension in data.type.spreadsheet():
+        type = 'Spreadsheet'
+    elif file_extension in data.type.system():
+        type = 'System File'
+    elif file_extension in data.type.text():
+        type = 'Text File'
+    elif file_extension in data.type.vector_image():
+        type = 'Vector Image'
+    elif file_extension in data.type.video():
+        type = 'Video'
+    elif file_extension in data.type.web():
+        type = 'Web Document'
+    else:
+        type = 'unknown'
+    return type
+
 def extension_to_human_readable(file_ext):
     result = data.ext_to_human_readable.file_extension_to_human_readable(file_ext)
     return result
 
 def extension_info(file_ext):
     result = data.extension_desc.extension_info(file_ext)
+    result['type'] = extension_type(file_ext)
     return result
 
 def extension_description(file_ext):
@@ -263,87 +316,6 @@ def extension_description(file_ext):
 def extension_usage(file_ext):
     result = data.extension_desc.extension_usage(file_ext)
     return result
-
-
-########## GROUPS ##########
-
-def get_path_info(file):
-    path_info = {}
-    correct_path = get_correct_path(file)
-    if os.path.exists(correct_path):
-        #FILENAME, EXTENSTION AND LOCATION
-        try:
-            file_base = os.path.basename(correct_path)
-            file_path = os.path.abspath(correct_path)
-            filename, file_extension = os.path.splitext(file_base)
-            path_info['file_base'] = file_base
-            path_info['file_path'] = file_path
-            path_info['filename'] = filename
-            path_info['file_extension'] = file_extension
-        except:
-            print("An error occured while getting this file's name")
-            path_info['file_base'] = 'Error'
-            path_info['file_path'] = 'Error'
-            path_info['filename'] = 'Error'
-            path_info['file_extension'] = 'Error'
-    else:
-       path_info['information'] = 'An error occured while searching for your file.'
-
-    return(path_info)
-
-def get_size_info(file):
-    size_info = {}
-    correct_path = get_correct_path(file)
-    if os.path.exists(correct_path):
-        #SIZE
-        try:
-            size_in_bytes = os.path.getsize(correct_path)
-            size_info['size_in_bytes'] = size_in_bytes
-            size_info['size'] = get_size(size_in_bytes)
-        except:
-            print("An error occured while getting this file's size")
-            size_info['size_in_bytes'] = 'Error'
-            size_info['size'] = 'Error'
-    else:
-       size_info['information'] = 'An error occured while searching for your file.'
-
-    return(size_info)
-
-def get_timestamps(file):
-    timestamps_info = {}
-    correct_path = get_correct_path(file)
-    if os.path.exists(correct_path):
-        #TIMESTAMPS
-        try:
-            file_stat = os.stat(correct_path)
-            last_access = file_stat.st_atime
-            last_access_nanoseconds = file_stat.st_atime_ns
-            last_modif = file_stat.st_mtime
-            last_modif_nanoseconds = file_stat.st_mtime_ns
-            last_metadata_change = file_stat.st_ctime
-            last_metadata_change_nanoseconds = file_stat.st_ctime_ns
-            
-            timestamps_info['file_stat'] = file_stat
-            timestamps_info['last_access'] = last_access
-            timestamps_info['last_access_nanoseconds'] = last_access_nanoseconds
-            timestamps_info['last_modification'] = last_modif
-            timestamps_info['last_modification_nanoseconds'] = last_modif_nanoseconds
-            timestamps_info['last_metadata_change'] = last_metadata_change
-            timestamps_info['last_metadata_change_nanoseconds'] = last_metadata_change_nanoseconds
-        except:
-            print("An error occured while getting timestamps for this file")
-            timestamps_info['file_stat'] = 'Error'
-            timestamps_info['last_access'] = 'Error'
-            timestamps_info['last_access_nanoseconds'] = 'Error'
-            timestamps_info['last_modification'] = 'Error'
-            timestamps_info['last_modification_nanoseconds'] = 'Error'
-            timestamps_info['last_metadata_change'] = 'Error'
-            timestamps_info['last_metadata_change_nanoseconds'] = 'Error'
-    else:
-       timestamps_info['information'] = 'An error occured while searching for your file.'
-
-    return(timestamps_info)
-
 
 
 
