@@ -11,6 +11,7 @@ import mimetypes
 import data.ext_to_human_readable
 import data.extension_desc
 import data.type
+import data.common
 
 ########## TOOLS ##########
 def get_size(bytes, suffix="B"):
@@ -54,6 +55,122 @@ def isfile(file):
     correct_path = get_correct_path(file)
     return(os.path.isfile(correct_path))
 
+
+###### FROM EXTENSION ######
+
+def iscommon(file_extension):
+    if file_extension in data.common.common_extensions():
+        common = True
+    else:
+        common = False
+    return(common)
+
+def popularity(file_extension):
+    if file_extension in data.common.common_extensions():
+        popularity = 'Very popular'
+    elif file_extension in data.common.common_extensions_extended():
+        popularity = 'Quite popular'
+    else:
+        popularity = 'Not very popular'
+
+    return(popularity)
+
+def type_from_extension(ext):
+    file_extension = ext
+    if file_extension in data.type.archive():
+        type = 'Archive'
+    elif file_extension in data.type.audio():
+        type = 'Audio'
+    elif file_extension in data.type.backup():
+        type = 'Backup'
+    elif file_extension in data.type.book():
+        type = 'eBook'
+    elif file_extension in data.type.database():
+        type = 'Database File'
+    elif file_extension in data.type.developer():
+        type = 'Developer'
+    elif file_extension in data.type.disk_image():
+        type = 'Disk Image'
+    elif file_extension in data.type.encoded():
+        type = 'Encoded File'
+    elif file_extension in data.type.executable():
+        type = 'Application/Executable'
+    elif file_extension in data.type.developer():
+        type = 'Developer'
+    elif file_extension in data.type.font():
+        type = 'Font'
+    elif file_extension in data.type.image_3d():
+        type = '3D Image'
+    elif file_extension in data.type.plugin():
+        type = 'Plugin'
+    elif file_extension in data.type.preset():
+        type = 'Preset/Settings'
+    elif file_extension in data.type.raster_image():
+        type = 'Image'
+    elif file_extension in data.type.raw_image():
+        type = 'Raw Image'
+    elif file_extension in data.type.rom():
+        type = 'ROM/Game File'
+    elif file_extension in data.type.spreadsheet():
+        type = 'Spreadsheet'
+    elif file_extension in data.type.system():
+        type = 'System File'
+    elif file_extension in data.type.text():
+        type = 'Text File'
+    elif file_extension in data.type.vector_image():
+        type = 'Vector Image'
+    elif file_extension in data.type.video():
+        type = 'Video'
+    elif file_extension in data.type.web():
+        type = 'Web Document'
+    elif file_extension == '':
+        type = 'Folder'
+    else:
+        type = 'unknown'
+    return type
+
+def extension_to_human_readable(file_ext):
+    if file_ext in data.common.common_extensions_extended():
+        result = data.common.common_extensions_human_readable()[file_ext]
+    else:
+        result = data.ext_to_human_readable.file_extension_to_human_readable(file_ext)
+    return result
+
+def extension_info(file_ext):
+    result = data.extension_desc.extension_info(file_ext)
+    result['type'] = type_from_extension(file_ext)
+    return result
+
+def extension_description(file_ext):
+    result = data.extension_desc.extension_description(file_ext)
+    return result
+
+def extension_usage(file_ext):
+    result = data.extension_desc.extension_usage(file_ext)
+    return result
+
+###### FROM BASE ######
+
+def name_from_base(base):
+    filename = ''
+    try:
+        filename, _ = os.path.splitext(base)
+    except:
+        filename = 'An error occured while getting the file base'
+    return filename
+
+
+def extension_from_base(base):
+    extension = ''
+    try:
+        _, extension = os.path.splitext(base)
+    except:
+        extension = 'An error occured while getting the file base'
+    return extension
+
+
+###### FROM EXISTING FILE ######
+
 def mimetype(file):
     mimetype = ''
     correct_path = get_correct_path(file)
@@ -88,10 +205,11 @@ def name(file):
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
         file_base = os.path.basename(correct_path)
-        filename, file_extension = os.path.splitext(file_base)
+        filename, _ = os.path.splitext(file_base)
     else:
         filename = 'An error occured while getting the file'
     return(filename)
+
 
 def extension(file):
     file_base = ''
@@ -99,7 +217,7 @@ def extension(file):
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
         file_base = os.path.basename(correct_path)
-        filename, file_extension = os.path.splitext(file_base)
+        _, file_extension = os.path.splitext(file_base)
     else:
         file_extension = 'An error occured while getting the file'
     return(file_extension)
@@ -244,78 +362,13 @@ def type(file):
         type = 'Video'
     elif file_extension in data.type.web():
         type = 'Web Document'
+    elif file_extension == '':
+        type = 'Folder'
     else:
         type = 'unknown'
     return type
 
-def extension_type(ext):
-    file_extension = ext
-    if file_extension in data.type.archive():
-        type = 'Archive'
-    elif file_extension in data.type.audio():
-        type = 'Audio'
-    elif file_extension in data.type.backup():
-        type = 'Backup'
-    elif file_extension in data.type.book():
-        type = 'eBook'
-    elif file_extension in data.type.database():
-        type = 'Database File'
-    elif file_extension in data.type.developer():
-        type = 'Developer'
-    elif file_extension in data.type.disk_image():
-        type = 'Disk Image'
-    elif file_extension in data.type.encoded():
-        type = 'Encoded File'
-    elif file_extension in data.type.executable():
-        type = 'Application/Executable'
-    elif file_extension in data.type.developer():
-        type = 'Developer'
-    elif file_extension in data.type.font():
-        type = 'Font'
-    elif file_extension in data.type.image_3d():
-        type = '3D Image'
-    elif file_extension in data.type.plugin():
-        type = 'Plugin'
-    elif file_extension in data.type.preset():
-        type = 'Preset/Settings'
-    elif file_extension in data.type.raster_image():
-        type = 'Image'
-    elif file_extension in data.type.raw_image():
-        type = 'Raw Image'
-    elif file_extension in data.type.rom():
-        type = 'ROM/Game File'
-    elif file_extension in data.type.spreadsheet():
-        type = 'Spreadsheet'
-    elif file_extension in data.type.system():
-        type = 'System File'
-    elif file_extension in data.type.text():
-        type = 'Text File'
-    elif file_extension in data.type.vector_image():
-        type = 'Vector Image'
-    elif file_extension in data.type.video():
-        type = 'Video'
-    elif file_extension in data.type.web():
-        type = 'Web Document'
-    else:
-        type = 'unknown'
-    return type
 
-def extension_to_human_readable(file_ext):
-    result = data.ext_to_human_readable.file_extension_to_human_readable(file_ext)
-    return result
-
-def extension_info(file_ext):
-    result = data.extension_desc.extension_info(file_ext)
-    result['type'] = extension_type(file_ext)
-    return result
-
-def extension_description(file_ext):
-    result = data.extension_desc.extension_description(file_ext)
-    return result
-
-def extension_usage(file_ext):
-    result = data.extension_desc.extension_usage(file_ext)
-    return result
 
 
 
@@ -331,6 +384,8 @@ def info(file):
         file_info['exists'] = exists(file)
         file_info['isdir'] = isdir(file)
         file_info['isfile'] = isfile(file)
+        file_info['iscommon'] = iscommon(extension(file))
+        file_info['extension_popularity'] = popularity(extension(file))
         file_info['mimetype'] = mimetype(file)
         file_info['base'] = base(file)
         file_info['given_path'] = file
@@ -356,15 +411,11 @@ def info(file):
     return file_info
 
 
-"""
 # Testing
 
 os.system('cls' if os.name == 'nt' else 'clear')
 file = input('File: ')
 os.system('cls' if os.name == 'nt' else 'clear')
 results = info(file)
-print('{')
 for info in results:
     print(info + ': ' + str(results[info]))
-print('     }')
-"""
