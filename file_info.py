@@ -170,6 +170,45 @@ def extension_from_base(base):
 
 
 ###### FROM EXISTING FILE ######
+def osstat_mode(file):
+    permissions = 0
+    correct_path = get_correct_path(file)
+    if os.path.exists(correct_path):
+        file_stat = os.stat(correct_path)
+        permissions = file_stat.st_mode
+    else:
+       permissions = 0
+    return(permissions)
+
+def permissions_in_oct(file):
+    permissions = ''
+    correct_path = get_correct_path(file)
+    if os.path.exists(correct_path):
+        file_stat = os.stat(correct_path)
+        permissions = oct(file_stat.st_mode & 0o777)
+    else:
+       permissions = 'Unable to get the file permissions'
+    return(permissions)
+
+
+def permissions(file):
+    octal = {'0': 'no permission', '1': 'execute', '2': 'write', '3': 'write and execute', '4': 'read', '5': 'read and execute', '6': 'read and write', '7': 'read, write and execute'}
+    permissions = {}
+    correct_path = get_correct_path(file)
+    if os.path.exists(correct_path):
+        octal_permissions = permissions_in_oct(file)
+        owner = octal_permissions[2]
+        group = octal_permissions[3]
+        others = octal_permissions[4]
+        permissions['owner'] = octal[owner]
+        permissions['group'] = octal[group]
+        permissions['others'] = octal[others]
+    else:
+       permissions = {'information': 'Unable to get permissions'}
+    return(permissions)
+
+
+
 
 def mimetype(file):
     mimetype = ''
