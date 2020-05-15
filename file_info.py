@@ -6,6 +6,9 @@
 
 
 # Imports
+import shutil
+import subprocess
+import platform
 import os
 import mimetypes
 import data.ext_to_human_readable
@@ -40,6 +43,44 @@ def get_correct_path(path):
             number_of_iterations += 1
     return path
 
+def move(origin, destination):
+    correct_path_of_origin = get_correct_path(origin)
+    correct_path_of_destination = get_correct_path(destination)
+    try:
+        shutil.move(correct_path_of_origin, correct_path_of_destination)
+        return 0
+    except:
+        return 1
+
+def remove(file):
+    correct_path = get_correct_path(file)
+    if os.path.isdir(correct_path):
+        try:
+            shutil.rmtree(correct_path)
+            return 0
+        except:
+            return 3
+    elif os.path.isfile(correct_path):
+        try:
+            os.remove(correct_path)
+            return 0
+        except:
+            return 2
+    else:
+        return 1
+
+def open(file):
+    try:
+        file_path = get_correct_path(file)
+        if platform.system() == 'Darwin':       # macOS
+            subprocess.call(('open', file_path))
+        elif platform.system() == 'Windows':    # Windows
+            os.startfile(file_path)
+        else:                                   # linux variants
+            subprocess.call(('xdg-open', file_path))
+        return 0
+    except:
+        return 1
 
 ########## INDIVIDUAL ##########
 
@@ -55,6 +96,17 @@ def isfile(file):
     correct_path = get_correct_path(file)
     return(os.path.isfile(correct_path))
 
+def issymboliclink(file):
+    correct_path = get_correct_path(file)
+    return(os.path.islink(correct_path))
+
+def ismountpoint(file):
+    correct_path = get_correct_path(file)
+    return(os.path.ismount(correct_path))
+
+def get_real_path(file):
+    correct_path = get_correct_path(file)
+    return(os.path.realpath(correct_path))
 
 ###### FROM EXTENSION ######
 
