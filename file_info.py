@@ -16,6 +16,8 @@ import data.extension_desc
 import data.type
 import data.common
 
+
+
 ########## TOOLS ##########
 def get_size(bytes, suffix="B"):
     """
@@ -52,7 +54,7 @@ def move(origin, destination):
     except:
         return 1
 
-def remove(file):
+def delete(file):
     correct_path = get_correct_path(file)
     if os.path.isdir(correct_path):
         try:
@@ -475,14 +477,19 @@ def info(file):
         file_info['exists'] = exists(file)
         file_info['isdir'] = isdir(file)
         file_info['isfile'] = isfile(file)
+        file_info['issymboliclink'] = issymboliclink(file)
+        file_info['ismountpoint'] = ismountpoint(file)
         file_info['iscommon'] = iscommon(extension(file))
         file_info['extension_popularity'] = popularity(extension(file))
         file_info['mimetype'] = mimetype(file)
         file_info['base'] = base(file)
         file_info['given_path'] = file
         file_info['usable_path'] = correct_path
+        file_info['real_path'] = get_real_path(file)
         file_info['name'] = name(file)
+        file_info['name_from_base'] = name_from_base(base(file))
         file_info['extension'] = extension(file)
+        file_info['extension_from_base'] = extension_from_base(base(file))
         file_info['size'] = size(file)
         file_info['size_in_bytes'] = size_in_bytes(file)
         file_info['full_file_stat'] = file_stat(file)
@@ -492,11 +499,18 @@ def info(file):
         file_info['last_modification_nanoseconds'] = last_modification_nanoseconds(file)
         file_info['last_metadata_change'] = last_metadata_change(file)
         file_info['last_metadata_change_nanoseconds'] = last_metadata_change_nanoseconds(file)
+        file_info['osstat_mode'] = osstat_mode(file)
+        file_info['permissions_in_oct'] = permissions_in_oct(file)
+        file_info['permissions'] = permissions(file)
         file_info['type'] = type(file)
+        file_info['type_from_extension'] = type_from_extension(extension(file))
         file_info['human_readable_extension'] = extension_to_human_readable(file_info['extension'])
         file_info['extension_info'] = extension_info(file_info['extension'])
         file_info['extension_description'] = extension_description(file_info['extension'])
         file_info['extension_usage'] = extension_usage(file_info['extension'])
+        file_info['move_command'] = 'file_info.move("{}", <destination path>)'.format(correct_path)
+        file_info['delete_command'] = 'file_info.delete("{}")'.format(correct_path)
+        file_info['open_command'] = 'file_info.open("{}")'.format(correct_path)
     else:
        file_info['information'] = 'An error occured while searching for your file.' 
     return file_info
@@ -510,3 +524,4 @@ os.system('cls' if os.name == 'nt' else 'clear')
 results = info(file)
 for info in results:
     print(info + ': ' + str(results[info]))
+print('')
