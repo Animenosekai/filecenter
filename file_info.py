@@ -562,3 +562,4 @@ results = info(file)
 for info in results:
     print(info + ': ' + str(results[info]))
 print('')
+input('Press enter to quit... ')
