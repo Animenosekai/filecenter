@@ -9,13 +9,15 @@
 import shutil
 import subprocess
 import platform
+
 import os
 import mimetypes
+import datetime
+
 import data.ext_to_human_readable
 import data.extension_desc
 import data.type
 import data.common
-
 
 
 ########## TOOLS ##########
@@ -342,7 +344,7 @@ def file_stat(file):
         file_stat = 'An error occured while getting the file'
     return(file_stat)
 
-def last_access(file):
+def last_access_raw(file):
     last_access = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -352,7 +354,7 @@ def last_access(file):
        last_access = 'An error occured while getting the file'
     return(last_access)
 
-def last_access_nanoseconds(file):
+def last_access_nanoseconds_raw(file):
     last_access_nanoseconds = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -362,7 +364,7 @@ def last_access_nanoseconds(file):
        last_access_nanoseconds = 'An error occured while getting the file'
     return(last_access_nanoseconds)
 
-def last_modification(file):
+def last_modification_raw(file):
     last_modification = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -372,7 +374,7 @@ def last_modification(file):
        last_modification = 'An error occured while getting the file'
     return(last_modification)
 
-def last_modification_nanoseconds(file):
+def last_modification_nanoseconds_raw(file):
     last_modification_nanoseconds = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -382,7 +384,7 @@ def last_modification_nanoseconds(file):
        last_modification_nanoseconds = 'An error occured while getting the file'
     return(last_modification_nanoseconds)
 
-def last_metadata_change(file):
+def last_metadata_change_raw(file):
     last_metadata_change = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -392,7 +394,7 @@ def last_metadata_change(file):
        last_metadata_change = 'An error occured while getting the file'
     return(last_metadata_change)
 
-def last_metadata_change_nanoseconds(file):
+def last_metadata_change_nanoseconds_raw(file):
     last_metadata_change_nanoseconds = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -402,6 +404,41 @@ def last_metadata_change_nanoseconds(file):
        last_metadata_change_nanoseconds = 'An error occured while getting the file'
     
     return(last_metadata_change_nanoseconds)
+
+def last_access(file):
+    last_access = ''
+    correct_path = get_correct_path(file)
+    if os.path.exists(correct_path):
+        file_stat = os.stat(correct_path)
+        last_access = file_stat.st_atime
+        last_access = datetime.datetime.fromtimestamp(last_access)
+    else:
+       last_access = 'An error occured while getting the file'
+    return(last_access)
+
+def last_modification(file):
+    last_modification = ''
+    correct_path = get_correct_path(file)
+    if os.path.exists(correct_path):
+        file_stat = os.stat(correct_path)
+        last_modification = file_stat.st_mtime
+        last_modification = datetime.datetime.fromtimestamp(last_modification)
+    else:
+       last_modification = 'An error occured while getting the file'
+    return(last_modification)
+
+def last_metadata_change(file):
+    last_metadata_change = ''
+    correct_path = get_correct_path(file)
+    if os.path.exists(correct_path):
+        file_stat = os.stat(correct_path)
+        last_metadata_change = file_stat.st_ctime
+        last_metadata_change = datetime.datetime.fromtimestamp(last_metadata_change)
+    else:
+       last_metadata_change = 'An error occured while getting the file'
+    return(last_metadata_change)
+
+#mod_timestamp = datetime.datetime.fromtimestamp(path.getmtime(<YOUR_PATH_HERE>))
 
 def type(file):
     type = ''
@@ -494,11 +531,11 @@ def info(file):
         file_info['size_in_bytes'] = size_in_bytes(file)
         file_info['full_file_stat'] = file_stat(file)
         file_info['last_access'] = last_access(file)
-        file_info['last_access_nanoseconds'] = last_access_nanoseconds(file)
+        file_info['last_access_nanoseconds'] = last_access_nanoseconds_raw(file)
         file_info['last_modification'] = last_modification(file)
-        file_info['last_modification_nanoseconds'] = last_modification_nanoseconds(file)
+        file_info['last_modification_nanoseconds'] = last_modification_nanoseconds_raw(file)
         file_info['last_metadata_change'] = last_metadata_change(file)
-        file_info['last_metadata_change_nanoseconds'] = last_metadata_change_nanoseconds(file)
+        file_info['last_metadata_change_nanoseconds'] = last_metadata_change_nanoseconds_raw(file)
         file_info['osstat_mode'] = osstat_mode(file)
         file_info['permissions_in_oct'] = permissions_in_oct(file)
         file_info['permissions'] = permissions(file)
