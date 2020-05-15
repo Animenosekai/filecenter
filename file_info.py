@@ -172,7 +172,7 @@ def type_from_extension(ext):
     elif file_extension in data.type.system():
         type = 'System File'
     elif file_extension in data.type.text():
-        type = 'Text File'
+        type = 'Text File/Document'
     elif file_extension in data.type.vector_image():
         type = 'Vector Image'
     elif file_extension in data.type.video():
@@ -181,6 +181,8 @@ def type_from_extension(ext):
         type = 'Web Document'
     elif file_extension == '':
         type = 'Folder'
+    elif file_extension == '.pdf':
+        type = 'Document'
     else:
         type = 'unknown'
     return type
@@ -485,7 +487,7 @@ def type(file):
     elif file_extension in data.type.system():
         type = 'System File'
     elif file_extension in data.type.text():
-        type = 'Text File'
+        type = 'Text File/Document'
     elif file_extension in data.type.vector_image():
         type = 'Vector Image'
     elif file_extension in data.type.video():
@@ -494,6 +496,8 @@ def type(file):
         type = 'Web Document'
     elif file_extension == '':
         type = 'Folder'
+    elif file_extension == '.pdf':
+        type = 'Document'
     else:
         type = 'unknown'
     return type
@@ -563,3 +567,4 @@ for info in results:
     print(info + ': ' + str(results[info]))
 print('')
 input('Press enter to quit... ')
+
