@@ -72,8 +72,8 @@ def delete(file):
         return 1
 
 def open(file):
+    file_path = get_correct_path(file)
     try:
-        file_path = get_correct_path(file)
         if platform.system() == 'Darwin':       # macOS
             subprocess.call(('open', file_path))
         elif platform.system() == 'Windows':    # Windows
