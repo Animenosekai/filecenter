@@ -41,7 +41,7 @@ def get_correct_path(path):
     number_of_iterations = 0
     for index in indexes_of_slash:
         character_after_slash = path[index + 1 - number_of_iterations]
-        print(character_after_slash)
+        #print(character_after_slash)
         if character_after_slash == ' ' or character_after_slash == '/':
             path = path[:index - number_of_iterations] + path[index + 1 - number_of_iterations:]
             number_of_iterations += 1
@@ -346,17 +346,8 @@ def file_stat(file):
         file_stat = 'An error occured while getting the file'
     return(file_stat)
 
-def last_access_raw(file):
-    last_access = ''
-    correct_path = get_correct_path(file)
-    if os.path.exists(correct_path):
-        file_stat = os.stat(correct_path)
-        last_access = file_stat.st_atime
-    else:
-       last_access = 'An error occured while getting the file'
-    return(last_access)
 
-def last_access_nanoseconds_raw(file):
+def last_access_raw(file):
     last_access_nanoseconds = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -366,17 +357,8 @@ def last_access_nanoseconds_raw(file):
        last_access_nanoseconds = 'An error occured while getting the file'
     return(last_access_nanoseconds)
 
-def last_modification_raw(file):
-    last_modification = ''
-    correct_path = get_correct_path(file)
-    if os.path.exists(correct_path):
-        file_stat = os.stat(correct_path)
-        last_modification = file_stat.st_mtime
-    else:
-       last_modification = 'An error occured while getting the file'
-    return(last_modification)
 
-def last_modification_nanoseconds_raw(file):
+def last_modification_raw(file):
     last_modification_nanoseconds = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -387,16 +369,6 @@ def last_modification_nanoseconds_raw(file):
     return(last_modification_nanoseconds)
 
 def last_metadata_change_raw(file):
-    last_metadata_change = ''
-    correct_path = get_correct_path(file)
-    if os.path.exists(correct_path):
-        file_stat = os.stat(correct_path)
-        last_metadata_change = file_stat.st_ctime
-    else:
-       last_metadata_change = 'An error occured while getting the file'
-    return(last_metadata_change)
-
-def last_metadata_change_nanoseconds_raw(file):
     last_metadata_change_nanoseconds = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -535,11 +507,11 @@ def info(file):
         file_info['size_in_bytes'] = size_in_bytes(file)
         file_info['full_file_stat'] = file_stat(file)
         file_info['last_access'] = last_access(file)
-        file_info['last_access_nanoseconds'] = last_access_nanoseconds_raw(file)
         file_info['last_modification'] = last_modification(file)
-        file_info['last_modification_nanoseconds'] = last_modification_nanoseconds_raw(file)
         file_info['last_metadata_change'] = last_metadata_change(file)
-        file_info['last_metadata_change_nanoseconds'] = last_metadata_change_nanoseconds_raw(file)
+        file_info['last_access_nanoseconds_raw'] = last_access_raw(file)
+        file_info['last_modification_nanoseconds_raw'] = last_modification_raw(file)
+        file_info['last_metadata_change_nanoseconds_raw'] = last_metadata_change_raw(file)
         file_info['osstat_mode'] = osstat_mode(file)
         file_info['permissions_in_oct'] = permissions_in_oct(file)
         file_info['permissions'] = permissions(file)
