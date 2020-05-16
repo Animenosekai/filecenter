@@ -86,6 +86,14 @@ def open(file):
     except:
         return 1
 
+def make_dir(path_of_new_dir):
+    path = get_correct_path(path_of_new_dir)
+    try:
+        os.makedirs(path)
+        return path
+    except:
+        return 'Error while making the new folder'
+
 def os_name():
     return os.name
 
