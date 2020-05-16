@@ -86,6 +86,9 @@ def open(file):
     except:
         return 1
 
+def os_name():
+    return os.name
+
 ########## INDIVIDUAL ##########
 
 def exists(file):
