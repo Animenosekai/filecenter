@@ -94,6 +94,10 @@ def make_dir(path_of_new_dir):
     except:
         return 'Error while making the new folder'
 
+def files_in_dir(path_of_dir):
+    path = get_correct_path(path_of_dir)
+    return os.listdir(path)
+
 def os_name():
     return os.name
 
@@ -162,8 +166,6 @@ def type_from_extension(ext):
         type = 'Encoded File'
     elif file_extension in data.type.executable():
         type = 'Application/Executable'
-    elif file_extension in data.type.developer():
-        type = 'Developer'
     elif file_extension in data.type.font():
         type = 'Font'
     elif file_extension in data.type.image_3d():
@@ -449,8 +451,6 @@ def type(file):
         type = 'Encoded File'
     elif file_extension in data.type.executable():
         type = 'Application/Executable'
-    elif file_extension in data.type.developer():
-        type = 'Developer'
     elif file_extension in data.type.font():
         type = 'Font'
     elif file_extension in data.type.image_3d():
