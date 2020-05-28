@@ -563,33 +563,31 @@ The FileInfo Library has no third-party dependencies needed.
 ### Sources
 Datafile | Source
 ------------ | -------------
-Firebase | [**Firebase Admin SDK Documentations**](https://firebase.google.com/docs/database/admin/start)
-Heroku | [**Heroku Documentations**](https://devcenter.heroku.com/categories/reference)
-discord.py | [**discord.py Documentations**](https://discordpy.readthedocs.io/en/latest/index.html#)
-Discord (API) | [**Discord Developper Portal**](https://discord.com/developers/docs/intro)
-Giphy | [**Giphy API Documentations**](https://developers.giphy.com/docs/api#quick-start-guide)
-Tenor | [**Tenor GIF API Documentations**](https://tenor.com/gifapi/documentation)
-
+data_common | [**FileInfo**](https://fileinfo.com/browse/),[**Wikipedia**](https://en.wikipedia.org/wiki/Main_Page), [**ComputerHope**](https://www.computerhope.com/)
+data_ext_to_human_readeable | [**Webopedia**](https://www.webopedia.com/quick_ref/fileextensionsfull.asp)
+data_extension_desc.py | [**Wikipedia**](https://en.wikipedia.org/wiki/List_of_filename_extensions)
+data_type | [**FileInfo**](https://fileinfo.com/browse/)
 
 ## Copyrights and Legals
 
-**Giphy** is a brand which belongs to Giphy, Inc.
+Every data here has been pulled from websites (and myself too lol) by hand (yea it took quite some time)
+**If you think that there is any kind of copyright infrigements, feel free to ask me to remove it and I will try to do so as soon as possible**
 
-**Tenor GIF** is a brand which belongs to Tenor, Inc.
+**Wikipedia** is hosted by the Wikimedia Foundation
 
-**Firebase** is a brand which belongs to Google, Inc.
+**Computer Hope** belongs to [Nathan Emberton](https://www.computerhope.com/people/nathan_emberton.htm)
 
-**Heroku** is a brand which belongs to Salesforce, Inc.
+**Webopedia** is a brand which belongs to TechnologyAdvice, LLC
 
-**Netlify** is a brand which belongs to Netlify Co.
+**FileInfo** belongs to Sharpened Productions
+
+[![FileInfo Logo](https://cdn.fileinfo.com/img/main/file_info_button.png)](https://fileinfo.com/)
 
 **GitHub** is a brand which belongs to GitHub, Inc. (Microsoft)
 
-**Discord** is a brand which belongs to Discord, Inc.
-
 **Python** belongs to the Python Software Foundation
 
-**Rebrand.ly** is a service/brand which belongs to Radiate Capital Limited
 
+I am in now way affiliated to FileInfo.com
 
 > ©Anime no Sekai - 2020 ✨
