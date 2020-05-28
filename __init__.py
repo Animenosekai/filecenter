@@ -4,24 +4,22 @@
 # © Anime no Sekai - 2020
 #
 
-
 # Imports
 import shutil
 import subprocess
 import platform
-
 import os
 import mimetypes
 import datetime
 
-import data.ext_to_human_readable
-import data.extension_desc
-import data.type
-import data.common
-
+# Data imports
+from . import data_ext_to_human_readable
+from . import data_extension_desc
+from . import data_type
+from . import data_common
 
 ########## TOOLS ##########
-def get_size(bytes, suffix="B"):
+def get_readeable_size(bytes, suffix="B"):
     """
     Credit to PythonCode for this function.
     > https://www.thepythoncode.com/article/get-hardware-system-information-python
@@ -130,16 +128,16 @@ def get_real_path(file):
 ###### FROM EXTENSION ######
 
 def iscommon(file_extension):
-    if file_extension in data.common.common_extensions():
+    if file_extension in data_common.common_extensions():
         common = True
     else:
         common = False
     return(common)
 
 def popularity(file_extension):
-    if file_extension in data.common.common_extensions():
+    if file_extension in data_common.common_extensions():
         popularity = 'Very popular'
-    elif file_extension in data.common.common_extensions_extended():
+    elif file_extension in data_common.common_extensions_extended():
         popularity = 'Quite popular'
     else:
         popularity = 'Not very popular'
@@ -148,49 +146,49 @@ def popularity(file_extension):
 
 def type_from_extension(ext):
     file_extension = ext
-    if file_extension in data.type.archive():
+    if file_extension in data_type.archive():
         type = 'Archive'
-    elif file_extension in data.type.audio():
+    elif file_extension in data_type.audio():
         type = 'Audio'
-    elif file_extension in data.type.backup():
+    elif file_extension in data_type.backup():
         type = 'Backup'
-    elif file_extension in data.type.book():
+    elif file_extension in data_type.book():
         type = 'eBook'
-    elif file_extension in data.type.database():
+    elif file_extension in data_type.database():
         type = 'Database File'
-    elif file_extension in data.type.developer():
+    elif file_extension in data_type.developer():
         type = 'Developer'
-    elif file_extension in data.type.disk_image():
+    elif file_extension in data_type.disk_image():
         type = 'Disk Image'
-    elif file_extension in data.type.encoded():
+    elif file_extension in data_type.encoded():
         type = 'Encoded File'
-    elif file_extension in data.type.executable():
+    elif file_extension in data_type.executable():
         type = 'Application/Executable'
-    elif file_extension in data.type.font():
+    elif file_extension in data_type.font():
         type = 'Font'
-    elif file_extension in data.type.image_3d():
+    elif file_extension in data_type.image_3d():
         type = '3D Image'
-    elif file_extension in data.type.plugin():
+    elif file_extension in data_type.plugin():
         type = 'Plugin'
-    elif file_extension in data.type.preset():
+    elif file_extension in data_type.preset():
         type = 'Preset/Settings'
-    elif file_extension in data.type.raster_image():
+    elif file_extension in data_type.raster_image():
         type = 'Image'
-    elif file_extension in data.type.raw_image():
+    elif file_extension in data_type.raw_image():
         type = 'Raw Image'
-    elif file_extension in data.type.rom():
+    elif file_extension in data_type.rom():
         type = 'ROM/Game File'
-    elif file_extension in data.type.spreadsheet():
+    elif file_extension in data_type.spreadsheet():
         type = 'Spreadsheet'
-    elif file_extension in data.type.system():
+    elif file_extension in data_type.system():
         type = 'System File'
-    elif file_extension in data.type.text():
+    elif file_extension in data_type.text():
         type = 'Text File/Document'
-    elif file_extension in data.type.vector_image():
+    elif file_extension in data_type.vector_image():
         type = 'Vector Image'
-    elif file_extension in data.type.video():
+    elif file_extension in data_type.video():
         type = 'Video'
-    elif file_extension in data.type.web():
+    elif file_extension in data_type.web():
         type = 'Web Document'
     elif file_extension == '':
         type = 'Folder'
@@ -201,23 +199,23 @@ def type_from_extension(ext):
     return type
 
 def extension_to_human_readable(file_ext):
-    if file_ext in data.common.common_extensions_extended():
-        result = data.common.common_extensions_human_readable()[file_ext]
+    if file_ext in data_common.common_extensions_extended():
+        result = data_common.common_extensions_human_readable()[file_ext]
     else:
-        result = data.ext_to_human_readable.file_extension_to_human_readable(file_ext)
+        result = data_ext_to_human_readable.file_extension_to_human_readable(file_ext)
     return result
 
 def extension_info(file_ext):
-    result = data.extension_desc.extension_info(file_ext)
+    result = data_extension_desc.extension_info(file_ext)
     result['type'] = type_from_extension(file_ext)
     return result
 
 def extension_description(file_ext):
-    result = data.extension_desc.extension_description(file_ext)
+    result = data_extension_desc.extension_description(file_ext)
     return result
 
 def extension_usage(file_ext):
-    result = data.extension_desc.extension_usage(file_ext)
+    result = data_extension_desc.extension_usage(file_ext)
     return result
 
 ###### FROM BASE ######
@@ -337,7 +335,7 @@ def size(file):
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
         size_in_bytes = os.path.getsize(correct_path)
-        size = get_size(size_in_bytes)
+        size = get_readeable_size(size_in_bytes)
     else:
        size = 'An error occured while getting the file'
     return(size)
@@ -433,49 +431,49 @@ def type(file):
     file_extension = extension(file)
     if os.path.isdir(correct_path):
         type = 'Folder/Directory'
-    elif file_extension in data.type.archive():
+    elif file_extension in data_type.archive():
         type = 'Archive'
-    elif file_extension in data.type.audio():
+    elif file_extension in data_type.audio():
         type = 'Audio'
-    elif file_extension in data.type.backup():
+    elif file_extension in data_type.backup():
         type = 'Backup'
-    elif file_extension in data.type.book():
+    elif file_extension in data_type.book():
         type = 'eBook'
-    elif file_extension in data.type.database():
+    elif file_extension in data_type.database():
         type = 'Database File'
-    elif file_extension in data.type.developer():
+    elif file_extension in data_type.developer():
         type = 'Developer'
-    elif file_extension in data.type.disk_image():
+    elif file_extension in data_type.disk_image():
         type = 'Disk Image'
-    elif file_extension in data.type.encoded():
+    elif file_extension in data_type.encoded():
         type = 'Encoded File'
-    elif file_extension in data.type.executable():
+    elif file_extension in data_type.executable():
         type = 'Application/Executable'
-    elif file_extension in data.type.font():
+    elif file_extension in data_type.font():
         type = 'Font'
-    elif file_extension in data.type.image_3d():
+    elif file_extension in data_type.image_3d():
         type = '3D Image'
-    elif file_extension in data.type.plugin():
+    elif file_extension in data_type.plugin():
         type = 'Plugin'
-    elif file_extension in data.type.preset():
+    elif file_extension in data_type.preset():
         type = 'Preset/Settings'
-    elif file_extension in data.type.raster_image():
+    elif file_extension in data_type.raster_image():
         type = 'Image'
-    elif file_extension in data.type.raw_image():
+    elif file_extension in data_type.raw_image():
         type = 'Raw Image'
-    elif file_extension in data.type.rom():
+    elif file_extension in data_type.rom():
         type = 'ROM/Game File'
-    elif file_extension in data.type.spreadsheet():
+    elif file_extension in data_type.spreadsheet():
         type = 'Spreadsheet'
-    elif file_extension in data.type.system():
+    elif file_extension in data_type.system():
         type = 'System File'
-    elif file_extension in data.type.text():
+    elif file_extension in data_type.text():
         type = 'Text File/Document'
-    elif file_extension in data.type.vector_image():
+    elif file_extension in data_type.vector_image():
         type = 'Vector Image'
-    elif file_extension in data.type.video():
+    elif file_extension in data_type.video():
         type = 'Video'
-    elif file_extension in data.type.web():
+    elif file_extension in data_type.web():
         type = 'Web Document'
     elif file_extension == '':
         type = 'Folder'
@@ -539,7 +537,7 @@ def info(file):
        file_info['information'] = 'An error occured while searching for your file.' 
     return file_info
 
-
+'''
 # Testing
 
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -551,3 +549,4 @@ for info in results:
 print('')
 input('Press enter to quit... ')
 
+'''
