@@ -1,6 +1,6 @@
 # FileInfo
  
- ### **A quick gif sending discord bot written in python**
+ ### **An easy file management and information center for Python**
 
 ## Installation
 You can install this library with **`PIP`**, the Python Package Manager
@@ -23,6 +23,7 @@ Arguments:
 
 > Returns 0 if success and 1 if failed
 
+
 - `move(*filepath*, *new_path*)`: Moves the given file to the provided new path.
 
 Arguments:
@@ -31,12 +32,14 @@ Arguments:
     
 > Returns 0 if success and 1 if failed
 
+
 - `delete(*filepath*)`: Deletes the given file.
 
 Arguments:
     *file*: the path of the file
 
 > Returns 0 if success, 1 if failed at getting the file, 2 if failed at moving a file and 3 if failed at moving a directory. 
+
 
 - `makedir(*path*)`: Makes a directory at the given path.
 
@@ -45,6 +48,7 @@ Arguments:
 
 > Returns the path of the directory if success, the string 'Error while making the new folder' if failed.
 
+
 - `files_in_dir(*path_to_folder*)`: Gives a list of files in a given directory.
 
 Arguments:
@@ -52,7 +56,9 @@ Arguments:
 
 > Returns the a list of files basename.
 
+
 - `os_name()`: Returns the operating system's name.
+
 
 - `get_correct_path(*path*)`: Change a non-python usable path into a python-usable one.
 
@@ -60,6 +66,7 @@ Arguments:
     *path*: the path to check.
 
 > Returns the path usable in python.
+
 
 - `get_readeable_size(*bytes*, *suffix*)`: To scale bytes to its proper format.
 
@@ -69,12 +76,15 @@ Arguments:
 
 > Returns the correctly scales size.
 
+---
+
 - `get_correct_path(*path*)`: Change a non-python usable path into a python-usable one.
 
 Arguments:
     *path*: the path to check.
 
 > Returns the path usable in python.
+
 
 
 
