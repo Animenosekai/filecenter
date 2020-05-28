@@ -8,7 +8,7 @@ setup(
   author = 'Anime no Sekai',                   # Type in your name
   author_email = 'niichannomail@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/user/Animenosekai/file_info.py',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/Animenosekai/file_info/archive/v1.2.2.tar.gz',    # I explain this later on
   keywords = ['file', 'information', 'fileinfo', 'type', 'extension', 'file management'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
       ],
