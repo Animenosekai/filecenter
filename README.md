@@ -1,4 +1,4 @@
-# FileInfo
+# file_info
  
  ### **An easy file management and information center for Python**
 
@@ -9,8 +9,8 @@ Simply type `pip install fileinfo` in your terminal/command-line prompt.
 
 > This library has no external/third-party dependencies.
 
-## What is FileInfo?
-FileInfo is a simple library to make developers life easier when it comes to file management and information.
+## What is File_Info?
+File_Info is a simple library to make developers life easier when it comes to file management and information.
 > You just have to import it to your project! `import fileinfo`
 
 ### Usage
@@ -534,7 +534,7 @@ Arguments:
 
 
 ## Development
-FileInfo is in constant development and fixes are made on a regular basis (but I also try to add some new features ehe)
+File_Info is in constant development and fixes are made on a regular basis (but I also try to add some new features ehe)
 
 #### If you have any issues, questions, development problem: feel free to ask in the issues section.
 
@@ -555,7 +555,7 @@ If you want to help us and join me here is a quick guide.
 
 `README.md` is the text file you're currently reading, with all the documentations and explanations.
 
-`LICENSE` is a text file with FileInfo's license
+`LICENSE` is a text file with File_Info's license
 
 #### Dependencies
 The FileInfo Library has no third-party dependencies needed.
