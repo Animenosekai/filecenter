@@ -16,72 +16,96 @@ FileInfo is a simple library to make developers life easier when it comes to fil
 ### Usage
 
 ##### File Actions 
-- `open(*filepath*)`: Opens the given file in its default software
+- **`open(*filepath*)`**
+
+**Opens the given file in its default software**
 
 Arguments:
-    *file*: the path to the file.
+    file: the path to the file.
 
 > Returns 0 if success and 1 if failed
 
+---
+- **`move(*filepath*, *new_path*)`**
 
-- `move(*filepath*, *new_path*)`: Moves the given file to the provided new path.
+**Moves the given file to the provided new path.**
 
 Arguments:
-    *origin*: the path to the file.
-    *destination*: the new path
+    origin: the path to the file.
+    destination: the new path
     
 > Returns 0 if success and 1 if failed
 
+---
+- **`delete(*filepath*)`**
 
-- `delete(*filepath*)`: Deletes the given file.
+**Deletes the given file.**
 
 Arguments:
-    *file*: the path of the file
+
+    file: the path of the file
 
 > Returns 0 if success, 1 if failed at getting the file, 2 if failed at moving a file and 3 if failed at moving a directory. 
 
+---
+- **`makedir(*path*)`**
 
-- `makedir(*path*)`: Makes a directory at the given path.
+**Makes a directory at the given path.**
 
 Arguments:
-    *path_of_new_dir*: the path where the directory needs to be created
+
+    path_of_new_dir: the path where the directory needs to be created
 
 > Returns the path of the directory if success, the string 'Error while making the new folder' if failed.
 
+---
+- **`files_in_dir(*path_to_folder*)`**
 
-- `files_in_dir(*path_to_folder*)`: Gives a list of files in a given directory.
+**Gives a list of files in a given directory.**
 
 Arguments:
-    *path_of_dir*: the path of the directory where the files are located.
+
+    path_of_dir: the path of the directory where the files are located.
 
 > Returns the a list of files basename.
 
+---
+- **`os_name()`**
 
-- `os_name()`: Returns the operating system's name.
+**Returns the operating system's name.**
 
+---
+- **`get_correct_path(path)`**
 
-- `get_correct_path(*path*)`: Change a non-python usable path into a python-usable one.
+**Change a non-python usable path into a python-usable one.**
 
 Arguments:
-    *path*: the path to check.
+
+    path: the path to check.
 
 > Returns the path usable in python.
 
+---
+- **`get_readeable_size(*bytes*, *suffix*)`**
 
-- `get_readeable_size(*bytes*, *suffix*)`: To scale bytes to its proper format.
+**To scale bytes to its proper format.**
 
 Arguments:
-    *bytes*: the number of bytes to convert.
-    *suffix*: if you want to change the suffix of the given size.
+
+    bytes: the number of bytes to convert.
+    suffix: if you want to change the suffix of the given size.
 
 > Returns the correctly scales size.
 
 ---
 
-- `get_correct_path(*path*)`: Change a non-python usable path into a python-usable one.
+- **`get_correct_path(*path*)`**
+
+**Change a non-python usable path into a python-usable one.**
 
 Arguments:
-    *path*: the path to check.
+
+    path: the path to check.
 
 > Returns the path usable in python.
 
