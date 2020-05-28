@@ -2,8 +2,7 @@
 ######### DATA BY ANIME NO SEKAI
 ######### BASED ON FileInfo, Wikipedia, ComputerHope
 ######### 
-#########
-import os
+######### data file for the fileinfo module
 
 def common_extensions():
     data = ['', '.doc', '.docx', '.log', '.odt', '.pages', '.rtf', '.txt', '.csv', '.key', '.keychain', '.pps', '.ppt', '.pptx', '.tar', '.xml', '.aif', '.m3u', '.m4a', '.mid', '.mp3', '.mpa', '.wav', '.wma', '.wmv', '.3g2', '.3gp', '.asf', '.avi', '.flv', '.m4v', '.mov', '.mp4', '.mkv', '.mpg', '.srt', '.swf', '.vob', '.wmv', '.3ds', '.max', '.obj', '.bmp', '.gif', '.heic', '.jpg', '.png', '.psd', '.tif', '.tiff', '.yuv', '.ai', '.eps', '.svg', '.indd', '.pdf', '.xlr', '.xls', '.xlsx', '.mdb', '.sql', '.apk', '.app', '.bat', '.cgi', '.com', '.exe', '.gadget', '.jar', '.wsf', '.nes', '.rom', '.dwg', '.cer', '.csr', '.css', '.htm', '.html', '.js', '.php', '.rss', '.xhtml', '.crx', '.plugin', '.fnt', '.otf', '.ttf', '.cur', '.dll', '.drv', '.icns', '.ico', '.lnk', '.sys', '.cfg', '.ini', '.prf', '.7z', '.pkg', '.rar', '.tar.gz', '.zip', '.zipx', '.dmg', '.iso', '.vcd', '.c', '.class', '.cpp', '.cs', '.dtd', '.fla', '.h', '.java', '.lua', '.m', '.pl', '.py', '.sh', '.sln', '.swift', '.tmp', '.crdownload', '.ics', '.msi', '.part', '.torrent', '.bin']

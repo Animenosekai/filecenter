@@ -13,7 +13,7 @@ import mimetypes
 import datetime
 
 # Data imports
-from . import data_ext_to_human_readable
+from . import data_ext_to_human_readeable
 from . import data_extension_desc
 from . import data_type
 from . import data_common
@@ -537,16 +537,15 @@ def info(file):
        file_info['information'] = 'An error occured while searching for your file.' 
     return file_info
 
-'''
+
 # Testing
 
-os.system('cls' if os.name == 'nt' else 'clear')
-file = input('File: ')
-os.system('cls' if os.name == 'nt' else 'clear')
-results = info(file)
-for info in results:
-    print(info + ': ' + str(results[info]))
-print('')
-input('Press enter to quit... ')
-
-'''
+if __name__ == "__main__":
+    os.system('cls' if os.name == 'nt' else 'clear')
+    file = input('File: ')
+    os.system('cls' if os.name == 'nt' else 'clear')
+    results = info(file)
+    for info in results:
+        print(info + ': ' + str(results[info]))
+    print('')
+    input('Press enter to quit... ')
