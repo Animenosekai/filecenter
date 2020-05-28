@@ -1,4 +1,4 @@
-#                                  File Info
+#                                  File Center
 #
 # for Python 3
 # © Anime no Sekai - 2020

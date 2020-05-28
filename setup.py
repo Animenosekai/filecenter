@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name = 'fileinfo',         # How you named your package folder (MyLib)
-  packages = ['fileinfo'],   # Chose the same as "name"
+  name = 'filecenter',         # How you named your package folder (MyLib)
+  packages = ['filecenter'],   # Chose the same as "name"
   version = '1.3',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'A file? An info!\n Get infos on file with a single line of code!\n Works with a database of file extensions so that it can even give you the type of the file.',   # Give a short description about your library
