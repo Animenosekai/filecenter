@@ -101,27 +101,27 @@ def os_name():
 
 ########## INDIVIDUAL ##########
 
-def exists(file):
+def exists(path):
     correct_path = get_correct_path(file)
     return(os.path.exists(correct_path))
 
-def isdir(file):
+def isdir(path):
     correct_path = get_correct_path(file)
     return(os.path.isdir(correct_path))
 
-def isfile(file):
+def isfile(path):
     correct_path = get_correct_path(file)
     return(os.path.isfile(correct_path))
 
-def issymboliclink(file):
+def issymboliclink(path):
     correct_path = get_correct_path(file)
     return(os.path.islink(correct_path))
 
-def ismountpoint(file):
+def ismountpoint(path):
     correct_path = get_correct_path(file)
     return(os.path.ismount(correct_path))
 
-def get_real_path(file):
+def get_real_path(path):
     correct_path = get_correct_path(file)
     return(os.path.realpath(correct_path))
 
@@ -144,8 +144,8 @@ def popularity(file_extension):
 
     return(popularity)
 
-def type_from_extension(ext):
-    file_extension = ext
+def type_from_extension(extension):
+    file_extension = extension
     if file_extension in data_type.archive():
         type = 'Archive'
     elif file_extension in data_type.audio():
@@ -198,24 +198,24 @@ def type_from_extension(ext):
         type = 'unknown'
     return type
 
-def extension_to_human_readable(file_ext):
-    if file_ext in data_common.common_extensions_extended():
-        result = data_common.common_extensions_human_readable()[file_ext]
+def extension_to_human_readeable(extension):
+    if extension in data_common.common_extensions_extended():
+        result = data_common.common_extensions_human_readable()[extension]
     else:
-        result = data_ext_to_human_readable.file_extension_to_human_readable(file_ext)
+        result = data_ext_to_human_readeable.file_extension_to_human_readable(extension)
     return result
 
-def extension_info(file_ext):
-    result = data_extension_desc.extension_info(file_ext)
-    result['type'] = type_from_extension(file_ext)
+def extension_info(extension):
+    result = data_extension_desc.extension_info(extension)
+    result['type'] = type_from_extension(extension)
     return result
 
-def extension_description(file_ext):
-    result = data_extension_desc.extension_description(file_ext)
+def extension_description(extension):
+    result = data_extension_desc.extension_description(extension)
     return result
 
-def extension_usage(file_ext):
-    result = data_extension_desc.extension_usage(file_ext)
+def extension_usage(extension):
+    result = data_extension_desc.extension_usage(extension)
     return result
 
 ###### FROM BASE ######
@@ -526,7 +526,7 @@ def info(file):
         file_info['permissions'] = permissions(file)
         file_info['type'] = type(file)
         file_info['type_from_extension'] = type_from_extension(extension(file))
-        file_info['human_readable_extension'] = extension_to_human_readable(file_info['extension'])
+        file_info['human_readable_extension'] = extension_to_human_readeable(file_info['extension'])
         file_info['extension_info'] = extension_info(file_info['extension'])
         file_info['extension_description'] = extension_description(file_info['extension'])
         file_info['extension_usage'] = extension_usage(file_info['extension'])
