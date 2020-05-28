@@ -581,8 +581,6 @@ Every data here has been pulled from websites (and myself too lol) by hand (yea 
 
 **FileInfo** belongs to Sharpened Productions
 
-[![FileInfo Logo](https://cdn.fileinfo.com/img/main/file_info_button.png)](https://fileinfo.com/)
-
 **GitHub** is a brand which belongs to GitHub, Inc. (Microsoft)
 
 **Python** belongs to the Python Software Foundation
