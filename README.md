@@ -1,7 +1,8 @@
 # filecenter
  
  ### **An easy file management and information center for Python**
- 
+
+[![PyPI version](https://badge.fury.io/py/filecenter.svg)](https://badge.fury.io/py/filecenter)
  
 ## Table of Content
 - [Installation](#installation)  
