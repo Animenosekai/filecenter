@@ -536,6 +536,36 @@ Arguments:
 > Returns an integer with the timestamp of the last metadata change time.
 
 
+### List of types
+
+- Archive
+- Audio
+- Backup
+- eBook
+- Database File
+- Developer
+- Disk Image
+- Encoded File
+- Application/Executable
+- Font
+- 3D Image
+- Plugin
+- Preset/Settings
+- Image
+- Raw Image
+- ROM/Game File
+- Spreadsheet
+- System file
+- Text File/Document
+- Vector Image
+- Video
+- Web Document
+- Folder
+- Document
+
+> The type is defined as "unknown" if not in the database
+
+
 ## Development
 File Center is in constant development and fixes are made on a regular basis (but I also try to add some new features ehe)
 
@@ -574,6 +604,7 @@ data_type | [**FileInfo**](https://fileinfo.com/browse/)
 ## Copyrights and Legals
 
 Every data here has been pulled from websites (and myself too lol) by hand (yea it took quite some time)
+
 **If you think that there is any kind of copyright infrigements, feel free to ask me to remove it and I will try to do so as soon as possible**
 
 **Wikipedia** is hosted by the Wikimedia Foundation
