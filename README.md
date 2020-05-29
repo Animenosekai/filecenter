@@ -438,7 +438,7 @@ Arguments:
 
 - **`info(file)`**
 
-**Gives everything.**
+**Gives every info you could get from filecenter on a given file.**
 
 Arguments:
 
