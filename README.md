@@ -417,8 +417,6 @@ Arguments:
 
 ### Other
 
-
----
 - **`os_name()`**
 
 **Returns the operating system's name.**
