@@ -102,27 +102,27 @@ def os_name():
 ########## INDIVIDUAL ##########
 
 def exists(path):
-    correct_path = get_correct_path(file)
+    correct_path = get_correct_path(path)
     return(os.path.exists(correct_path))
 
 def isdir(path):
-    correct_path = get_correct_path(file)
+    correct_path = get_correct_path(path)
     return(os.path.isdir(correct_path))
 
 def isfile(path):
-    correct_path = get_correct_path(file)
+    correct_path = get_correct_path(path)
     return(os.path.isfile(correct_path))
 
 def issymboliclink(path):
-    correct_path = get_correct_path(file)
+    correct_path = get_correct_path(path)
     return(os.path.islink(correct_path))
 
 def ismountpoint(path):
-    correct_path = get_correct_path(file)
+    correct_path = get_correct_path(path)
     return(os.path.ismount(correct_path))
 
 def get_real_path(path):
-    correct_path = get_correct_path(file)
+    correct_path = get_correct_path(path)
     return(os.path.realpath(correct_path))
 
 ###### FROM EXTENSION ######
