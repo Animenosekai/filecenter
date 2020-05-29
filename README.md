@@ -15,12 +15,13 @@ File Center is a simple library to make developers life easier when it comes to 
 
 ## Usage
 
-#### File Actions 
+### File Actions 
 - **`open(filepath)`**
 
 **Opens the given file in its default software**
 
 Arguments:
+
     file: the path to the file.
 
 > Returns 0 if success and 1 if failed
@@ -31,6 +32,7 @@ Arguments:
 **Moves the given file to the provided new path.**
 
 Arguments:
+
     origin: the path to the file.
     destination: the new path
     
@@ -159,10 +161,9 @@ Arguments:
 
 ---
 
-#### File Information
+### File Information
 
----
-##### Boolean Values
+#### Boolean Values
 
 - **`exists(path)`**
 
@@ -351,35 +352,6 @@ Arguments:
 > Returns the a list of files basename.
 
 ---
-- **`os_name()`**
-
-**Returns the operating system's name.**
-
----
-- **`get_readeable_size(bytes, suffix)`**
-
-**To scale bytes to its proper format.**
-
-Arguments:
-
-    bytes: the number of bytes to convert.
-    suffix: if you want to change the suffix of the given size.
-
-> Returns the correctly scales size.
-
----
-
-- **`get_correct_path(path)`**
-
-**Change a non-python usable path into a python-usable one.**
-
-Arguments:
-
-    path: the path to check.
-
-> Returns the path usable in python.
-
----
 ##### Time
 
 - **`last_access(file)`**
@@ -442,9 +414,41 @@ Arguments:
 > Returns a python dictionnary containing everything.
 
 ---
-### Advanced
-Advanced
+
+### Other
+
+
 ---
+- **`os_name()`**
+
+**Returns the operating system's name.**
+
+---
+- **`get_readeable_size(bytes, suffix)`**
+
+**To scale bytes to its proper format.**
+
+Arguments:
+
+    bytes: the number of bytes to convert.
+    suffix: if you want to change the suffix of the given size.
+
+> Returns the correctly scales size.
+
+---
+
+- **`get_correct_path(path)`**
+
+**Change a non-python usable path into a python-usable one.**
+
+Arguments:
+
+    path: the path to check.
+
+> Returns the path usable in python.
+
+---
+### Advanced
 
 - **`osstat_mode(file)`**
 
