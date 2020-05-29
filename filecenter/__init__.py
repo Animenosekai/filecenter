@@ -21,6 +21,8 @@ from . import data_common
 ########## TOOLS ##########
 def get_readeable_size(bytes, suffix="B"):
     """
+    To scale bytes to its proper format.
+    
     Credit to PythonCode for this function.
     > https://www.thepythoncode.com/article/get-hardware-system-information-python
     Scale bytes to its proper format
@@ -35,6 +37,9 @@ def get_readeable_size(bytes, suffix="B"):
         bytes /= factor
 
 def get_correct_path(path):
+    """
+    Change a non-python usable path into a python-usable one.
+    """
     indexes_of_slash = [i for i, ltr in enumerate(path) if ltr == "\\"]
     number_of_iterations = 0
     for index in indexes_of_slash:
@@ -46,6 +51,9 @@ def get_correct_path(path):
     return path
 
 def move(origin, destination):
+    """
+    Moves the given file to the provided new path.
+    """
     correct_path_of_origin = get_correct_path(origin)
     correct_path_of_destination = get_correct_path(destination)
     try:
@@ -55,6 +63,9 @@ def move(origin, destination):
         return 1
 
 def delete(file):
+    """
+    Deletes the given file.
+    """
     correct_path = get_correct_path(file)
     if os.path.isdir(correct_path):
         try:
@@ -72,6 +83,9 @@ def delete(file):
         return 1
 
 def open(file):
+    """
+    Opens the given file in its default software.
+    """
     file_path = get_correct_path(file)
     try:
         if platform.system() == 'Darwin':       # macOS
@@ -85,6 +99,9 @@ def open(file):
         return 1
 
 def make_dir(path_of_new_dir):
+    """
+    Makes a directory at the given path.
+    """
     path = get_correct_path(path_of_new_dir)
     try:
         os.makedirs(path)
@@ -93,41 +110,68 @@ def make_dir(path_of_new_dir):
         return 'Error while making the new folder'
 
 def files_in_dir(path_of_dir):
+    """
+    Gives a list of files in a given directory.
+    """
     path = get_correct_path(path_of_dir)
     return os.listdir(path)
 
 def os_name():
+    """
+    Returns the operating system's name.
+    """
     return os.name
 
 ########## INDIVIDUAL ##########
 
 def exists(path):
+    """
+    Checks if a fiven file or directory exists.
+    """
     correct_path = get_correct_path(path)
     return(os.path.exists(correct_path))
 
 def isdir(path):
+    """
+    Checks is a given path is a directory.
+    """
     correct_path = get_correct_path(path)
     return(os.path.isdir(correct_path))
 
 def isfile(path):
+    """
+    Checks if a given path is a file.
+    """
     correct_path = get_correct_path(path)
     return(os.path.isfile(correct_path))
 
 def issymboliclink(path):
+    """
+    Checks if a given path is a symbolic link (an alias).
+    """
     correct_path = get_correct_path(path)
     return(os.path.islink(correct_path))
 
 def ismountpoint(path):
+    """
+    Checks if the given path is a disk mountpoint.
+    """
     correct_path = get_correct_path(path)
     return(os.path.ismount(correct_path))
 
 def get_real_path(path):
+    """
+    Checks for the real path of a file/directory (without symbolic links).
+    """
     correct_path = get_correct_path(path)
     return(os.path.realpath(correct_path))
 
 ###### FROM EXTENSION ######
 
 def iscommon(file_extension):
+    """
+    Checks if a given file extension is commonly used.
+    """
     if file_extension in data_common.common_extensions():
         common = True
     else:
@@ -135,6 +179,9 @@ def iscommon(file_extension):
     return(common)
 
 def popularity(file_extension):
+    """
+    Gives the popularity of a given file extension.
+    """
     if file_extension in data_common.common_extensions():
         popularity = 'Very popular'
     elif file_extension in data_common.common_extensions_extended():
@@ -145,6 +192,9 @@ def popularity(file_extension):
     return(popularity)
 
 def type_from_extension(extension):
+    """
+    Gives the type of file using the given extension.
+    """
     file_extension = extension
     if file_extension in data_type.archive():
         type = 'Archive'
@@ -199,6 +249,9 @@ def type_from_extension(extension):
     return type
 
 def extension_to_human_readeable(extension):
+    """
+    Gives the human readeable version of a given extension.
+    """
     if extension in data_common.common_extensions_extended():
         result = data_common.common_extensions_human_readable()[extension]
     else:
@@ -206,21 +259,33 @@ def extension_to_human_readeable(extension):
     return result
 
 def extension_info(extension):
+    """
+    Gives a dictionnary with multiple information of a given extension.
+    """
     result = data_extension_desc.extension_info(extension)
     result['type'] = type_from_extension(extension)
     return result
 
 def extension_description(extension):
+    """
+    Gives the description of a given file extension.
+    """
     result = data_extension_desc.extension_description(extension)
     return result
 
 def extension_usage(extension):
+    """
+    Gives the softwares using a given file extension.
+    """
     result = data_extension_desc.extension_usage(extension)
     return result
 
 ###### FROM BASE ######
 
 def name_from_base(base):
+    """
+    Returns the name of a file from the given file base.
+    """
     filename = ''
     try:
         filename, _ = os.path.splitext(base)
@@ -230,6 +295,9 @@ def name_from_base(base):
 
 
 def extension_from_base(base):
+    """
+    Returns the extension of a file from the given file base.
+    """
     extension = ''
     try:
         _, extension = os.path.splitext(base)
@@ -240,6 +308,9 @@ def extension_from_base(base):
 
 ###### FROM EXISTING FILE ######
 def osstat_mode(file):
+    """
+    Returns the mode part of os.stat() for a given file.
+    """
     permissions = 0
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -250,6 +321,9 @@ def osstat_mode(file):
     return(permissions)
 
 def permissions_in_oct(file):
+    """
+    Returns the octal version of the permissions for a given file.
+    """
     permissions = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -261,6 +335,9 @@ def permissions_in_oct(file):
 
 
 def permissions(file):
+    """
+    Returns the permissions for a given file.
+    """
     octal = {'0': 'no permission', '1': 'execute', '2': 'write', '3': 'write and execute', '4': 'read', '5': 'read and execute', '6': 'read and write', '7': 'read, write and execute'}
     permissions = {}
     correct_path = get_correct_path(file)
@@ -280,6 +357,9 @@ def permissions(file):
 
 
 def mimetype(file):
+    """
+    Returns the MIME type for a given file.
+    """
     mimetype = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -290,6 +370,9 @@ def mimetype(file):
     return(mimetype)
 
 def base(file):
+    """
+    Returns the file base from a given path.
+    """
     file_base = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -299,6 +382,9 @@ def base(file):
     return(file_base)
 
 def path(file):
+    """
+    Returns the absolute path of a file path.
+    """
     file_path = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -308,6 +394,9 @@ def path(file):
     return(file_path)
 
 def name(file):
+    """
+    Gives the name of a file based on its path.
+    """
     file_base = ''
     filename = ''
     correct_path = get_correct_path(file)
@@ -320,6 +409,9 @@ def name(file):
 
 
 def extension(file):
+    """
+    Returns the extension of a file based on its path.
+    """
     file_base = ''
     file_extension = ''
     correct_path = get_correct_path(file)
@@ -331,6 +423,9 @@ def extension(file):
     return(file_extension)
 
 def size(file):
+    """
+    Returns the size of a file.
+    """
     size = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -341,6 +436,9 @@ def size(file):
     return(size)
 
 def size_in_bytes(file):
+    """
+    Returns the size of a file in bytes.
+    """
     size_in_bytes = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -350,6 +448,9 @@ def size_in_bytes(file):
     return(size_in_bytes)
 
 def file_stat(file):
+    """
+    Returns the os.stat() of a given file.
+    """
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
         file_stat = os.stat(correct_path)
@@ -359,6 +460,9 @@ def file_stat(file):
 
 
 def last_access_raw(file):
+    """
+    Gives the last access time as a timestamp.
+    """
     last_access_nanoseconds = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -370,6 +474,9 @@ def last_access_raw(file):
 
 
 def last_modification_raw(file):
+    """
+    Gives the last modification time as a timestamp.
+    """
     last_modification_nanoseconds = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -380,6 +487,9 @@ def last_modification_raw(file):
     return(last_modification_nanoseconds)
 
 def last_metadata_change_raw(file):
+    """
+    Gives the last metadata change time as a timestamp.
+    """
     last_metadata_change_nanoseconds = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -391,6 +501,9 @@ def last_metadata_change_raw(file):
     return(last_metadata_change_nanoseconds)
 
 def last_access(file):
+    """
+    Gives the last access time.
+    """
     last_access = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -402,6 +515,9 @@ def last_access(file):
     return(last_access)
 
 def last_modification(file):
+    """
+    Gives the last modification time.
+    """
     last_modification = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -413,6 +529,9 @@ def last_modification(file):
     return(last_modification)
 
 def last_metadata_change(file):
+    """
+    Gives the last metadata change time.
+    """
     last_metadata_change = ''
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
@@ -426,6 +545,9 @@ def last_metadata_change(file):
 #mod_timestamp = datetime.datetime.fromtimestamp(path.getmtime(<YOUR_PATH_HERE>))
 
 def type(file):
+    """
+    Returns the type of file.
+    """
     type = ''
     correct_path = get_correct_path(file)
     file_extension = extension(file)
@@ -493,6 +615,9 @@ def type(file):
 ########## EVERYTHING ##########
 
 def info(file):
+    """
+    Gives every info you could get from filecenter on a given file.
+    """
     file_info = {}
     correct_path = get_correct_path(file)
     if os.path.exists(correct_path):
