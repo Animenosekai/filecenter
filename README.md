@@ -13,9 +13,9 @@ Simply type `pip install filecenter` in your terminal/command-line prompt.
 File Center is a simple library to make developers life easier when it comes to file management and information.
 > You just have to import it to your project! `import filecenter`
 
-### Usage
+## Usage
 
-##### File Actions 
+#### File Actions 
 - **`open(filepath)`**
 
 **Opens the given file in its default software**
@@ -59,147 +59,7 @@ Arguments:
 > Returns the path of the directory if success, the string 'Error while making the new folder' if failed.
 
 ---
-- **`files_in_dir(path_to_folder)`**
-
-**Gives a list of files in a given directory.**
-
-Arguments:
-
-    path_of_dir: the path of the directory where the files are located.
-
-> Returns the a list of files basename.
-
----
-- **`os_name()`**
-
-**Returns the operating system's name.**
-
----
-- **`get_correct_path(path)`**
-
-**Change a non-python usable path into a python-usable one.**
-
-Arguments:
-
-    path: the path to check.
-
-> Returns the path usable in python.
-
----
-- **`get_readeable_size(bytes, suffix)`**
-
-**To scale bytes to its proper format.**
-
-Arguments:
-
-    bytes: the number of bytes to convert.
-    suffix: if you want to change the suffix of the given size.
-
-> Returns the correctly scales size.
-
----
-
-- **`get_correct_path(path)`**
-
-**Change a non-python usable path into a python-usable one.**
-
-Arguments:
-
-    path: the path to check.
-
-> Returns the path usable in python.
-
----
-
-- **`exists(path)`**
-
-**Checks if a fiven file or directory exists.**
-
-Arguments:
-
-    file: the file path to check.
-
-> Returns a boolean value.
-
-
----
-
-- **`isdir(path)`**
-
-**Checks is a given path is a directory.**
-
-Arguments:
-
-    path: the path to check.
-
-> Returns a boolean value.
-
-
----
-
-- **`isfile(path)`**
-
-**Checks if a given path is a file.**
-
-Arguments:
-
-    path: the path to check.
-
-> Returns a boolean value.
-
-
----
-
-- **`issymboliclink(path)`**
-
-**Checks if a given path is a symbolic link (an alias).**
-
-Arguments:
-
-    path: the path to check.
-
-> Returns a boolean value.
-
-
----
-
-- **`ismountpoint(path)`**
-
-**Checks if the given path is a disk mountpoint.**
-
-Arguments:
-
-    path: the path to check.
-
-> Returns a boolean value.
-
-
----
-
-- **`get_real_path(path)`**
-
-**Checks for the real path of a file/directory (without symbolic links).**
-
-Arguments:
-
-    path: the path to check.
-
-> Returns a boolean value.
-
-
----
-
-- **`iscommon(extension)`**
-
-**Checks if a given file extension is commonly used.**
-
-Arguments:
-
-    file_extension: the extension you want to check.
-
-> Returns a boolean value.
-
----
+### Extension Information
 
 - **`popularity(extension)`**
 
@@ -271,6 +131,7 @@ Arguments:
 > Returns a list of softwares name.
 
 ---
+### File Base Information
 
 - **`name_from_base(base)`**
 
@@ -298,31 +159,87 @@ Arguments:
 
 ---
 
-- **`osstat_mode(file)`**
+#### File Information
 
-**Returns the mode part of os.stat() for a given file.**
+---
+##### Boolean Values
 
-Mostly used to get the permissions of a file from (even if you can use permissions() or permissions_in_oct() to do so)
+- **`exists(path)`**
+
+**Checks if a fiven file or directory exists.**
 
 Arguments:
 
-    file: the path to the file you want to get the mode part from.
+    file: the file path to check.
 
-> Returns a os.stat() class or 0 if failed.
+> Returns a boolean value.
+
 
 ---
 
-- **`permissions_in_oct(file)`**
+- **`isdir(path)`**
 
-**Returns the octal version of the permissions for a given file.**
+**Checks is a given path is a directory.**
 
 Arguments:
 
-    file: the path to the file you want to get the permissions from.
+    path: the path to check.
 
-> Returns an octal string or the string 'Unable to get the file permissions' if the file isn't found.
+> Returns a boolean value.
+
 
 ---
+
+- **`isfile(path)`**
+
+**Checks if a given path is a file.**
+
+Arguments:
+
+    path: the path to check.
+
+> Returns a boolean value.
+
+
+---
+
+- **`issymboliclink(path)`**
+
+**Checks if a given path is a symbolic link (an alias).**
+
+Arguments:
+
+    path: the path to check.
+
+> Returns a boolean value.
+
+
+---
+
+- **`ismountpoint(path)`**
+
+**Checks if the given path is a disk mountpoint.**
+
+Arguments:
+
+    path: the path to check.
+
+> Returns a boolean value.
+
+
+---
+
+- **`iscommon(extension)`**
+
+**Checks if a given file extension is commonly used.**
+
+Arguments:
+
+    file_extension: the extension you want to check.
+
+> Returns a boolean value.
+
+##### Informations
 
 - **`permissions(file)`**
 
@@ -412,6 +329,150 @@ Arguments:
 
 ---
 
+- **`get_real_path(path)`**
+
+**Checks for the real path of a file/directory (without symbolic links).**
+
+Arguments:
+
+    path: the path to check.
+
+> Returns a boolean value.
+
+---
+- **`files_in_dir(path_to_folder)`**
+
+**Gives a list of files in a given directory.**
+
+Arguments:
+
+    path_of_dir: the path of the directory where the files are located.
+
+> Returns the a list of files basename.
+
+---
+- **`os_name()`**
+
+**Returns the operating system's name.**
+
+---
+- **`get_readeable_size(bytes, suffix)`**
+
+**To scale bytes to its proper format.**
+
+Arguments:
+
+    bytes: the number of bytes to convert.
+    suffix: if you want to change the suffix of the given size.
+
+> Returns the correctly scales size.
+
+---
+
+- **`get_correct_path(path)`**
+
+**Change a non-python usable path into a python-usable one.**
+
+Arguments:
+
+    path: the path to check.
+
+> Returns the path usable in python.
+
+---
+##### Time
+
+- **`last_access(file)`**
+
+**Gives the last access time.**
+
+Arguments:
+
+    file: the path to the file you want to get the last access time from.
+
+> Returns a datetime object.
+
+---
+
+- **`last_modification(file)`**
+
+**Gives the last modification time.**
+
+Arguments:
+
+    file: the path to the file you want to get the last modification time from.
+
+> Returns a datetime object.
+
+---
+
+- **`last_metadata_change(file)`**
+
+**Gives the last metadata change time.**
+
+Arguments:
+
+    file: the path to the file you want to get the last modification time from.
+
+> Returns a datetime object.
+
+---
+
+- **`type(file)`**
+
+**Returns the type of file.**
+
+Arguments:
+
+    file: the path of the file you want to know the type from.
+
+> Returns a string with the type.
+
+---
+### Every Information at once
+
+- **`info(file)`**
+
+**Gives everything.**
+
+Arguments:
+
+    file: the path to the file you want to get the infos from.
+
+> Returns a python dictionnary containing everything.
+
+---
+### Advanced
+Advanced
+---
+
+- **`osstat_mode(file)`**
+
+**Returns the mode part of os.stat() for a given file.**
+
+Mostly used to get the permissions of a file from (even if you can use permissions() or permissions_in_oct() to do so)
+
+Arguments:
+
+    file: the path to the file you want to get the mode part from.
+
+> Returns a os.stat() class or 0 if failed.
+
+
+---
+
+- **`permissions_in_oct(file)`**
+
+**Returns the octal version of the permissions for a given file.**
+
+Arguments:
+
+    file: the path to the file you want to get the permissions from.
+
+> Returns an octal string or the string 'Unable to get the file permissions' if the file isn't found.
+
+---
+
 - **`size_in_bytes(file)`**
 
 **Returns the size of a file in bytes.**
@@ -471,66 +532,6 @@ Arguments:
     file: the path to the file you want to get the last metadata change time from.
 
 > Returns an integer with the timestamp of the last metadata change time.
-
----
-
-- **`last_access(file)`**
-
-**Gives the last access time.**
-
-Arguments:
-
-    file: the path to the file you want to get the last access time from.
-
-> Returns a datetime object.
-
----
-
-- **`last_modification(file)`**
-
-**Gives the last modification time.**
-
-Arguments:
-
-    file: the path to the file you want to get the last modification time from.
-
-> Returns a datetime object.
-
----
-
-- **`last_metadata_change(file)`**
-
-**Gives the last metadata change time.**
-
-Arguments:
-
-    file: the path to the file you want to get the last modification time from.
-
-> Returns a datetime object.
-
----
-
-- **`type(file)`**
-
-**Returns the type of file.**
-
-Arguments:
-
-    file: the path of the file you want to know the type from.
-
-> Returns a string with the type.
-
----
-
-- **`info(file)`**
-
-**Gives everything.**
-
-Arguments:
-
-    file: the path to the file you want to get the infos from.
-
-> Returns a python dictionnary containing everything.
 
 
 ## Development
