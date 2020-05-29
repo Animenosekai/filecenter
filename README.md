@@ -1,6 +1,23 @@
 # filecenter
  
  ### **An easy file management and information center for Python**
+ 
+ 
+## Table of Content
+- [Installation](#installation)  
+- [What is File Center?](#whatis)
+- [Usage](#usage)
+   - [File Actions](#fileactions)  
+   - [Extension Info](#extension)
+   - [File Base Info](#filebase)
+   - [File Info](#fileinfo)
+   - [Advanced](#advanced)
+- [List of file types in the database](#listoftypes)
+- [Development](#development) 
+- [Legals](#legals)
+ 
+ 
+<a name="installation"/>
 
 ## Installation
 You can install this library with **`PIP`**, the Python Package Manager
@@ -9,11 +26,18 @@ Simply type `pip install filecenter` in your terminal/command-line prompt.
 
 > This library has no external/third-party dependencies.
 
+<a name="whatis"/>
+
 ## What is File Center?
 File Center is a simple library to make developers life easier when it comes to file management and information.
 > You just have to import it to your project! `import filecenter`
 
+
+<a name="usage"/>
+
 ## Usage
+
+<a name="fileactions"/>
 
 ### File Actions 
 - **`open(filepath)`**
@@ -61,6 +85,9 @@ Arguments:
 > Returns the path of the directory if success, the string 'Error while making the new folder' if failed.
 
 ---
+
+<a name="extension"/>
+
 ### Extension Information
 
 - **`popularity(extension)`**
@@ -133,6 +160,9 @@ Arguments:
 > Returns a list of softwares name.
 
 ---
+
+<a name="filebase"/>
+
 ### File Base Information
 
 - **`name_from_base(base)`**
@@ -160,6 +190,8 @@ Arguments:
 > Returns a string with the file extension. (including the dot)
 
 ---
+
+<a name="fileinfo"/>
 
 ### File Information
 
@@ -446,6 +478,9 @@ Arguments:
 > Returns the path usable in python.
 
 ---
+
+<a name="advanced"/>
+
 ### Advanced
 
 - **`osstat_mode(file)`**
@@ -535,6 +570,7 @@ Arguments:
 
 > Returns an integer with the timestamp of the last metadata change time.
 
+<a name="listoftypes"/>
 
 ## List of types
 
@@ -565,6 +601,7 @@ Arguments:
 
 > The type is defined as "unknown" if not in the database
 
+<a name="development"/>
 
 ## Development
 File Center is in constant development and fixes are made on a regular basis (but I also try to add some new features ehe)
@@ -600,6 +637,8 @@ data_common | [**FileInfo**](https://fileinfo.com/browse/),[**Wikipedia**](https
 data_ext_to_human_readeable | [**Webopedia**](https://www.webopedia.com/quick_ref/fileextensionsfull.asp)
 data_extension_desc.py | [**Wikipedia**](https://en.wikipedia.org/wiki/List_of_filename_extensions)
 data_type | [**FileInfo**](https://fileinfo.com/browse/)
+
+<a name="legals"/>
 
 ## Copyrights and Legals
 
