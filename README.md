@@ -536,7 +536,7 @@ Arguments:
 > Returns an integer with the timestamp of the last metadata change time.
 
 
-### List of types
+## List of types
 
 - Archive
 - Audio
