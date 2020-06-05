@@ -2,7 +2,13 @@
  
  ### **An easy file management and information center for Python**
 
-[![PyPI version](https://badge.fury.io/py/filecenter.svg)](https://badge.fury.io/py/filecenter)
+[![PyPI version](https://badge.fury.io/py/filecenter.svg)](https://pypi.org/project/filecenter/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/filecenter)](https://pypistats.org/packages/filecenter)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/filecenter)](https://pypi.org/project/filecenter/)
+[![PyPI - Status](https://img.shields.io/pypi/status/filecenter)](https://pypi.org/project/filecenter/)
+[![GitHub - License](https://img.shields.io/github/license/Animenosekai/filecenter)](https://github.com/Animenosekai/filecenter/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues-raw/Animenosekai/filecenter)](https://github.com/Animenosekai/filecenter/issues)
+[![GitHub top language](https://img.shields.io/github/languages/top/Animenosekai/filecenter)](https://github.com/Animenosekai/filecenter)
  
 ## Table of Content
 - [Installation](#installation)  
